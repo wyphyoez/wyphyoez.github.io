@@ -5,9 +5,9 @@
 	import Header from '$lib/components/header.svelte';
 </script>
 
-<div class="min-h-screen flex flex-col">
+<div class="min-h-screen flex flex-col bg-[hsl(var(--background))]">
 	<Header />
-	<main class="flex-1 max-w-6xl w-full mx-auto px-4 py-8 md:px-6 md:py-12 mt-20 md:mt-24">
+	<main class="flex-1 w-full">
 		<slot />
 	</main>
 	<Footer />
