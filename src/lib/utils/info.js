@@ -1,8 +1,8 @@
 import hoobank from '$lib/images/hoobank.png';
 
 export const info = {
-	baseUrl: 'https://waiyanphioe.vercel.app',
-	name: 'Wai Yan Phioe',
+	baseUrl: 'https://wyphyoez.vercel.app',
+	name: 'Wai Yan Phyoe',
 	jobDescription: 'Full-Stack Web Developer',
 	about: `I'm a Full-Stack Web Developer based in Meiktila, Myanmar.
    I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
@@ -99,11 +99,11 @@ export const info = {
 	],
 
 	socialMedia: {
-		facebook: 'https://www.facebook.com/waiyanphioe',
-		twitter: 'https://twitter.com/waiyanphioe',
-		github: 'https://github.com/waiyanphioe',
-		email: 'waiyanphioe@gmail.com',
-		linkedin: 'https://www.linkedin.com/in/waiyanphioe'
+		facebook: 'https://www.facebook.com/wyphyoez',
+		twitter: 'https://twitter.com/wyphyoez',
+		github: 'https://github.com/wyphyoez',
+		email: 'wyphyoez@gmail.com',
+		linkedin: 'https://www.linkedin.com/in/wyphyoez'
 	},
 
 	projects: [
