@@ -1,13 +1,34 @@
 <script>
+	import { onMount } from 'svelte';
 	import { info } from '$lib/utils/info';
+	import { theme } from '$lib/stores/theme';
 	import profile from '$lib/images/profile.jpg';
-	import { browser } from '$app/environment';
 
-	let show;
-	let menu;
-	let isDarkMode = browser ? Boolean(document.documentElement.classList.contains('dark')) : true;
+	let show = false;
+	let menu = false;
+	let isDarkMode = false;
+
+	onMount(() => {
+		// Sync theme with localStorage on mount
+		const saved = localStorage.getItem('isDarkMode');
+		isDarkMode = saved ? JSON.parse(saved) : false;
+
+		// Subscribe to theme changes
+		const unsubscribe = theme.subscribe((value) => {
+			isDarkMode = value;
+			disableTransitionsTemporarily();
+			if (value) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+		});
+
+		return unsubscribe;
+	});
+
 	const handler = () => {
-		window.scrollY > 100 ? (show = true) : (show = false);
+		show = window.scrollY > 100;
 	};
 
 	function disableTransitionsTemporarily() {
@@ -15,6 +36,12 @@
 		window.setTimeout(() => {
 			document.documentElement.classList.remove('[&_*]:!transition-none');
 		}, 0);
+	}
+
+	function toggleTheme() {
+		isDarkMode = !isDarkMode;
+		localStorage.setItem('isDarkMode', isDarkMode.toString());
+		theme.toggle();
 	}
 </script>
 
@@ -55,19 +82,8 @@
 							role="switch"
 							aria-label="Toggle Dark Mode"
 							aria-checked={isDarkMode}
-							class="p-2 border-none rounded-full bg-slate-200 text-zinc-600 hover:text-dark dark:bg-light005 dark:text-light040 hover:dark:text-light "
-							on:click={() => {
-								isDarkMode = !isDarkMode;
-								localStorage.setItem('isDarkMode', isDarkMode.toString());
-
-								disableTransitionsTemporarily();
-
-								if (isDarkMode) {
-									document.documentElement.classList.add('dark');
-								} else {
-									document.documentElement.classList.remove('dark');
-								}
-							}}
+							class="p-2 border-none rounded-full bg-slate-200 text-zinc-600 hover:text-dark dark:bg-light005 dark:text-light040 hover:dark:text-light"
+							on:click={toggleTheme}
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +118,7 @@
 					</li>
 					<li class="md:hidden block">
 						<a
-							href="https://google.com"
+							href="/resume.pdf"
 							target="_blank"
 							class={`block py-2 px-6 font-medium transition text-base rounded-3xl border-none text-dark dark:text-light ${
 								show

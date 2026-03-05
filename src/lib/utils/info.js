@@ -108,18 +108,52 @@ export const info = {
 
 	projects: [
 		{
-			title: 'HooBank',
+			title: 'HooBank - Modern Banking Interface',
+			description: 'A responsive banking platform UI built with React and Tailwind CSS showcasing modern design patterns and smooth animations.',
 			isFeatured: true,
 			thumbnail: hoobank,
+			tech: ['React', 'Tailwind CSS', 'JavaScript'],
 			githubUrl: 'https://github.com/waiyanphioe/hoobank',
 			liveUrl: 'https://hoobank-wyp.vercel.app/'
 		},
 		{
-			title: 'HooBank',
+			title: 'Portfolio Website',
+			description: 'Personal portfolio site built with Next.js and Astro, featuring dynamic content, dark mode, and optimized performance.',
 			isFeatured: true,
 			thumbnail: hoobank,
+			tech: ['Next.js', 'Astro', 'TypeScript', 'Tailwind'],
 			githubUrl: 'https://github.com/uzzii-21/astro-portfolio',
 			liveUrl: 'https://astro-portfolio-uzair.vercel.app/'
+		},
+		{
+			title: 'E-Commerce Platform',
+			description: 'Full-stack e-commerce solution with product catalog, shopping cart, and payment integration. Built with React and Node.js.',
+			isFeatured: false,
+			thumbnail: hoobank,
+			tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+			githubUrl: 'https://github.com/waiyanphioe/ecommerce',
+			liveUrl: 'https://ecommerce-demo.vercel.app/'
+		}
+	],
+
+	testimonials: [
+		{
+			author: 'John Smith',
+			role: 'Product Manager at TechCorp',
+			content: 'Wai Yan delivered outstanding results on our web project. Professional, responsive, and highly skilled in modern web technologies.',
+			image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=John'
+		},
+		{
+			author: 'Sarah Johnson',
+			role: 'CEO at StartupXYZ',
+			content: 'Impressed by the quality of work and attention to detail. Wai Yan is a reliable developer who delivers on time and exceeds expectations.',
+			image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah'
+		},
+		{
+			author: 'Mike Chen',
+			role: 'Founder at DigitalStudio',
+			content: 'Great collaboration experience. Wai Yan understands complex requirements and translates them into clean, maintainable code.',
+			image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Mike'
 		}
 	]
 };

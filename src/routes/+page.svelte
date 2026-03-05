@@ -4,6 +4,7 @@
 	import Hero from '$lib/sections/hero.svelte';
 	import Experience from '$lib/sections/experience.svelte';
 	import ProjectsWrapper from '../lib/components/ProjectsWrapper.svelte';
+	import Testimonials from '../lib/sections/testimonials.svelte';
 </script>
 
 <Head name="Wai Yan Phioe" />
@@ -11,3 +12,4 @@
 <Hero name={info.name} />
 <Experience title={'EDUCATION'} details={info.education} />
 <ProjectsWrapper projects={info.projects} />
+<Testimonials testimonials={info.testimonials} />
