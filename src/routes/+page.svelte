@@ -6,7 +6,7 @@
 	import ProjectsWrapper from '../lib/components/ProjectsWrapper.svelte';
 </script>
 
-<Head name="Wai Yan Phioe" />
+<Head name="Wai Yan Phyoe (@wyphyoez)" />
 
 <Hero name={info.name} />
 <Experience title={'EDUCATION'} details={info.education} />

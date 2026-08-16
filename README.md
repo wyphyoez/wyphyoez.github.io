@@ -1,4 +1,4 @@
-# Wai Yan Phioe Portfolio
+# Wai Yan Phyoe (@wyphyoez) Portfolio
 
 My portfolio and blog website developed with SvelteKit. Blog contents are written in Markdown format, with light and dark themes supported.
 
@@ -13,7 +13,7 @@ git clone https://github.com/wyphyoez/wyphyoez.github.io.git
 Go to the project directory :
 
 ```bash
-cd waiyanphioe.github.io
+cd wyphyoez.github.io
 
 ```
 
