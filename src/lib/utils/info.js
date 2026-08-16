@@ -1,7 +1,7 @@
 import hoobank from '$lib/images/hoobank.png';
 
 export const info = {
-	baseUrl: 'https://waiyanphioe.vercel.app',
+	baseUrl: 'https://wyphyoez.pages.dev',
 	name: 'Wai Yan Phyoe (@wyphyoez)',
 	jobDescription: 'Full-Stack Web Developer',
 	about: `I'm a Full-Stack Web Developer based in Meiktila, Myanmar.
