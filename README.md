@@ -1,13 +1,13 @@
 # Wai Yan Phioe Portfolio
 
-My portfolio & blog website developed with SvelteKit . Blog contents are written in Markdown format. Light & Dark themes supported.
+My portfolio and blog website developed with SvelteKit. Blog contents are written in Markdown format, with light and dark themes supported.
 
 ## Running Locally
 
 Clone the project :
 
 ```bash
-npm clone https://github.com/waiyanphioe/waiyanphioe.github.io.git
+git clone https://github.com/wyphyoez/wyphyoez.github.io.git
 ```
 
 Go to the project directory :
@@ -17,13 +17,7 @@ cd waiyanphioe.github.io
 
 ```
 
-Remove remote origin :
-
-```bash
-git remote remove origin
-```
-
-Install dependencies :
+Install dependencies:
 
 ```bash
 npm install

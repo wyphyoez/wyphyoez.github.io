@@ -9,13 +9,13 @@
 			<a href="#about" class="mr-4 hover:underline md:mr-6 ">About</a>
 		</li>
 		<li>
-			<a href="/#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+			<a href="/articles" class="mr-4 hover:underline md:mr-6">Articles</a>
 		</li>
 		<li>
-			<a href="/#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+			<a href="/projects" class="mr-4 hover:underline md:mr-6">Projects</a>
 		</li>
 		<li>
-			<a href="#contact" class="hover:underline">Contact</a>
+			<a href="mailto:waiyanphioe@gmail.com" class="hover:underline">Contact</a>
 		</li>
 	</ul>
 </footer>

@@ -15,23 +15,23 @@ export const info = {
   `,
 	navLinks: [
 		{
-			path: '../',
+			path: '/',
 			title: 'Home'
 		},
 		{
-			path: '../about',
+			path: '/about',
 			title: 'About'
 		},
 		{
-			path: '../articles',
+			path: '/articles',
 			title: 'Articles'
 		},
 		{
-			path: '../projects',
+			path: '/projects',
 			title: 'Projects'
 		},
 		{
-			path: '../uses',
+			path: '/uses',
 			title: 'Uses'
 		}
 	],
@@ -115,7 +115,7 @@ export const info = {
 			liveUrl: 'https://hoobank-wyp.vercel.app/'
 		},
 		{
-			title: 'HooBank',
+			title: 'Astro Portfolio',
 			isFeatured: true,
 			thumbnail: hoobank,
 			githubUrl: 'https://github.com/uzzii-21/astro-portfolio',

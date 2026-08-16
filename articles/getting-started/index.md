@@ -74,7 +74,7 @@ If you wish to change the theme of your code blocks, you can edit the `src/prism
 
 ```javascript
 function helloWorld() {
-  return 'Hello World'
+	return 'Hello World';
 }
 ```
 
