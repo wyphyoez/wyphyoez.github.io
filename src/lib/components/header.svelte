@@ -47,9 +47,7 @@
 					alt="Portrait of Wai Yan Phyoe"
 					class="h-9 w-9 rounded-full object-cover"
 				/>
-				<span
-					class="hidden font-outfit text-sm font-semibold tracking-tight sm:inline dark:text-white"
-				>
+				<span class="font-outfit text-sm font-semibold tracking-tight dark:text-white">
 					{info.handle}
 				</span>
 			</a>
@@ -97,7 +95,7 @@
 				aria-expanded={menu}
 				aria-controls="mobile-menu"
 				on:click={() => (menu = !menu)}
-				class="rounded-full bg-zinc-100 p-2 text-zinc-700 transition hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20 md:hidden"
+				class="rounded-full bg-zinc-100 p-2 text-zinc-700 transition hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20 minmd:hidden"
 			>
 				<span aria-hidden="true">{menu ? '×' : '☰'}</span>
 			</button>
@@ -105,7 +103,7 @@
 	</nav>
 
 	{#if menu}
-		<div id="mobile-menu" class="mx-auto mt-2 max-w-5xl md:hidden">
+		<div id="mobile-menu" class="mx-auto mt-2 max-w-5xl minmd:hidden">
 			<div
 				class="rounded-3xl border border-zinc-200/80 bg-white/95 p-3 shadow-xl shadow-zinc-900/10 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/95"
 			>

@@ -1,12 +1,21 @@
 # Wai Yan Phyoe Cloudflare Pages Update
 
+## Responsive Recovery Pass
+
+- [x] Audit current git state, layout wrapper, Header state logic, breakpoint definitions, and recent responsive edits.
+- [x] Reproduce the mobile Header/menu failure at a narrow viewport and inspect browser console/runtime errors.
+- [x] Restore a working mobile Header menu using explicit Svelte state and stable breakpoint classes.
+- [x] Reconcile Hero/Footer styles with the original design without breaking other routes.
+- [x] Verify homepage, articles, projects, about, and uses at mobile and desktop widths.
+- [ ] Run lint, tests, production build, push to GitHub, and redeploy Cloudflare Pages.
+
 ## Screenshot-driven Hero and Footer Revision
 
 - [x] Inspect the current Hero and Footer against the supplied mobile screenshots.
 - [x] Rework dark-theme contrast, mobile spacing, CTA styling, and hero information hierarchy.
 - [x] Rebuild the mobile footer columns, wrapping, route links, and contact action.
 - [x] Verify mobile and desktop screenshots plus lint, tests, and production build.
-- [ ] Push the Hero/Footer revision to GitHub and redeploy Cloudflare Pages.
+- [x] Push the Hero/Footer revision to GitHub and redeploy Cloudflare Pages.
 
 ## Mobile Responsive and Contact Fix
 
