@@ -1,5 +1,13 @@
 # Wai Yan Phyoe Cloudflare Pages Update
 
+## Screenshot-driven Hero and Footer Revision
+
+- [x] Inspect the current Hero and Footer against the supplied mobile screenshots.
+- [x] Rework dark-theme contrast, mobile spacing, CTA styling, and hero information hierarchy.
+- [x] Rebuild the mobile footer columns, wrapping, route links, and contact action.
+- [x] Verify mobile and desktop screenshots plus lint, tests, and production build.
+- [ ] Push the Hero/Footer revision to GitHub and redeploy Cloudflare Pages.
+
 ## Mobile Responsive and Contact Fix
 
 - [x] Inspect mobile breakpoints, overflow, navigation, hero, cards, and route layouts.
