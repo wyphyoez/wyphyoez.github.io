@@ -1,4 +1,6 @@
 <script>
+	import Icon from '$lib/components/Icon.svelte';
+
 	export let projectDetail;
 	export let index = 0;
 	const { title, label, description, stack, thumbnail, liveUrl, githubUrl } = projectDetail;
@@ -29,7 +31,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<span aria-hidden="true">⌘</span>
+					<Icon name="github" className="h-4 w-4" />
 				</a>
 				<a
 					href={liveUrl}
@@ -38,7 +40,7 @@
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<span aria-hidden="true">↗</span>
+					<Icon name="arrowUpRight" className="h-4 w-4" />
 				</a>
 			</div>
 		</div>
