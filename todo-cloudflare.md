@@ -7,7 +7,7 @@
 - [x] Replace emoji/text symbols with consistent accessible SVG icons.
 - [x] Improve article listing and article reading typography, metadata, navigation, and mobile spacing.
 - [x] Verify top/scroll Header states, article routes, icon accessibility, lint, tests, and production build.
-- [ ] Push the refinement and redeploy Cloudflare Pages.
+- [x] Push the refinement and redeploy Cloudflare Pages.
 
 ## Header, Logo, and Floating Layout Revision
 
@@ -50,7 +50,7 @@
 - [x] Update all contact mailto links to ask@wyphyoez.cyou.
 - [x] Apply mobile-first fixes and verify narrow viewport behavior.
 - [x] Run lint, tests, production build, and responsive smoke checks.
-- [ ] Push the mobile and email fixes to GitHub and redeploy Cloudflare Pages.
+- [x] Push the mobile and email fixes to GitHub and redeploy Cloudflare Pages.
 
 ## Quality Upgrade Pass
 
@@ -73,4 +73,4 @@
 - [x] Audit About and Uses pages for the upgraded editorial system and identity consistency.
 - [x] Set the canonical and social metadata base URL to https://wyphyoez.cyou.
 - [x] Replace the About CTA text arrow with the shared SVG arrow icon.
-- [ ] Commit the canonical/content cleanup and redeploy Cloudflare Pages.
+- [x] Commit the canonical/content cleanup and redeploy Cloudflare Pages.
