@@ -12,18 +12,18 @@
 	/>
 </svelte:head>
 
-<section class="mx-auto max-w-5xl py-20 sm:py-28">
+<section class="mx-auto max-w-5xl py-20 minmd:py-28">
 	<div class="max-w-3xl">
 		<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">About the work</p>
 		<h1
-			class="mt-4 font-outfit text-5xl font-semibold leading-tight tracking-tight text-dark sm:text-7xl dark:text-white"
+			class="mt-4 font-outfit text-5xl font-semibold leading-tight tracking-tight text-dark minmd:text-7xl dark:text-white"
 		>
 			A practical builder with a soft spot for good details.
 		</h1>
 		<p class="mt-8 text-xl leading-9 text-zinc-600 dark:text-zinc-400">{info.about}</p>
 	</div>
 
-	<div class="mt-20 grid gap-6 lg:grid-cols-3">
+	<div class="mt-20 grid gap-6 min-lg:grid-cols-3">
 		<div
 			class="rounded-[1.75rem] border border-zinc-200/80 bg-white/60 p-7 dark:border-white/10 dark:bg-white/5"
 		>
@@ -54,7 +54,7 @@
 	</div>
 
 	<div class="mt-20 border-t border-zinc-200/80 pt-10 dark:border-white/10">
-		<div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+		<div class="flex flex-col gap-5 minmd:flex-row minmd:items-center minmd:justify-between">
 			<div>
 				<p class="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-400">Availability</p>
 				<p class="mt-2 font-outfit text-2xl font-semibold text-dark dark:text-white">

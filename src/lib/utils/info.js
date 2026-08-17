@@ -72,7 +72,7 @@ export const info = {
 	],
 	socialMedia: {
 		github: 'https://github.com/wyphyoez',
-		email: 'waiyanphyoe@gmail.com'
+		email: 'ask@wyphyoez.cyou'
 	},
 	projects: [
 		{

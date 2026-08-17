@@ -4,12 +4,12 @@
 </script>
 
 <section
-	class="grid gap-10 border-t border-zinc-200/80 py-20 sm:py-28 lg:grid-cols-[0.7fr_1.3fr] dark:border-white/10"
+	class="grid gap-10 border-t border-zinc-200/80 py-20 minmd:py-28 min-lg:grid-cols-[0.7fr_1.3fr] dark:border-white/10"
 >
 	<div>
 		<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">02 / {title}</p>
 		<h2
-			class="mt-4 font-outfit text-4xl font-semibold tracking-tight text-dark sm:text-5xl dark:text-white"
+			class="mt-4 font-outfit text-4xl font-semibold tracking-tight text-dark minmd:text-5xl dark:text-white"
 		>
 			A practice of staying curious.
 		</h2>
@@ -18,7 +18,7 @@
 		class="divide-y divide-zinc-200/80 border-y border-zinc-200/80 dark:divide-white/10 dark:border-white/10"
 	>
 		{#each details as item, index}
-			<div class="grid gap-4 py-7 sm:grid-cols-[5rem_1fr] sm:gap-8">
+			<div class="grid gap-4 py-7 minmd:grid-cols-[5rem_1fr] minmd:gap-8">
 				<span class="font-mono text-sm text-zinc-400">0{index + 1}</span>
 				<div>
 					<div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">

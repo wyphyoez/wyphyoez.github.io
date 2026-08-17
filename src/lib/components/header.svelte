@@ -55,7 +55,7 @@
 			</a>
 		</div>
 
-		<ul class="hidden items-center gap-1 md:flex">
+		<ul class="hidden items-center gap-1 minmd:flex">
 			{#each info.navLinks as navLink}
 				<li>
 					<a
@@ -68,12 +68,12 @@
 			{/each}
 		</ul>
 
-		<div class="ml-auto flex items-center gap-2 md:ml-4">
+		<div class="ml-auto flex items-center gap-2 minmd:ml-4">
 			<a
 				href={info.socialMedia.github}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="hidden rounded-full border border-zinc-200 px-4 py-2 text-sm font-semibold text-zinc-700 transition hover:border-blue hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue dark:border-white/10 dark:text-zinc-100 dark:hover:border-blue dark:hover:text-blue md:inline-flex"
+				class="hidden rounded-full border border-zinc-200 px-4 py-2 text-sm font-semibold text-zinc-700 transition hover:border-blue hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue dark:border-white/10 dark:text-zinc-100 dark:hover:border-blue dark:hover:text-blue minmd:inline-flex"
 			>
 				GitHub
 			</a>

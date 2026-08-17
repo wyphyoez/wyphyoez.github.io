@@ -43,7 +43,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="p-6 sm:p-7">
+	<div class="p-6 minmd:p-7">
 		<div class="flex items-start justify-between gap-4">
 			<h3 class="font-outfit text-2xl font-semibold tracking-tight text-dark dark:text-white">
 				{title}

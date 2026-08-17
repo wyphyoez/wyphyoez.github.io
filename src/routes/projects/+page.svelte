@@ -10,11 +10,11 @@
 	path="/projects"
 />
 
-<section class="mx-auto max-w-5xl py-20 sm:py-28">
+<section class="mx-auto max-w-5xl py-20 minmd:py-28">
 	<header class="max-w-3xl">
 		<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">Selected work</p>
 		<h1
-			class="mt-4 font-outfit text-5xl font-semibold tracking-tight text-dark sm:text-7xl dark:text-white"
+			class="mt-4 font-outfit text-5xl font-semibold tracking-tight text-dark minmd:text-7xl dark:text-white"
 		>
 			Projects with a point of view.
 		</h1>
@@ -23,7 +23,7 @@
 			make something clearer.
 		</p>
 	</header>
-	<div class="mt-16 grid gap-6 lg:grid-cols-2">
+	<div class="mt-16 grid gap-6 min-lg:grid-cols-2">
 		{#each info.projects as project}
 			<ProjectCard projectDetail={project} />
 		{/each}

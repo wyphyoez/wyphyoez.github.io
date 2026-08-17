@@ -16,11 +16,11 @@
 	path="/uses"
 />
 
-<section class="mx-auto max-w-4xl py-20 sm:py-28">
+<section class="mx-auto max-w-4xl py-20 minmd:py-28">
 	<header class="max-w-2xl">
 		<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">The workbench</p>
 		<h1
-			class="mt-4 font-outfit text-5xl font-semibold tracking-tight text-dark sm:text-7xl dark:text-white"
+			class="mt-4 font-outfit text-5xl font-semibold tracking-tight text-dark minmd:text-7xl dark:text-white"
 		>
 			Tools I reach for.
 		</h1>
@@ -33,7 +33,7 @@
 		class="mt-16 divide-y divide-zinc-200/80 border-y border-zinc-200/80 dark:divide-white/10 dark:border-white/10"
 	>
 		{#each tools as tool, index}
-			<section class="grid gap-4 py-8 sm:grid-cols-[6rem_1fr] sm:gap-8">
+			<section class="grid gap-4 py-8 minmd:grid-cols-[6rem_1fr] minmd:gap-8">
 				<span class="font-mono text-sm text-zinc-400">0{index + 1}</span>
 				<div>
 					<h2 class="font-outfit text-2xl font-semibold text-dark dark:text-white">{tool.group}</h2>

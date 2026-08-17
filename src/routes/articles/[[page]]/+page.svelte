@@ -13,11 +13,11 @@
 	<meta name="description" content={`Notes on building software by ${info.name}.`} />
 </svelte:head>
 
-<section class="mx-auto max-w-4xl py-20 sm:py-28">
+<section class="mx-auto max-w-4xl py-20 minmd:py-28">
 	<header class="max-w-2xl">
 		<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">Field notes</p>
 		<h1
-			class="mt-4 font-outfit text-5xl font-semibold tracking-tight text-dark sm:text-7xl dark:text-white"
+			class="mt-4 font-outfit text-5xl font-semibold tracking-tight text-dark minmd:text-7xl dark:text-white"
 		>
 			Articles
 		</h1>
@@ -35,11 +35,11 @@
 				href={`/article/${article.slug}`}
 				class="group block py-8 transition focus:outline-none focus:ring-2 focus:ring-blue focus:ring-inset"
 			>
-				<div class="grid gap-4 sm:grid-cols-[7rem_1fr_auto] sm:items-start sm:gap-8">
+				<div class="grid gap-4 minmd:grid-cols-[7rem_1fr_auto] minmd:items-start minmd:gap-8">
 					<span class="font-mono text-sm text-zinc-400">{String(index + 1).padStart(2, '0')}</span>
 					<div>
 						<h2
-							class="font-outfit text-2xl font-semibold tracking-tight text-dark transition group-hover:text-blue sm:text-3xl dark:text-white"
+							class="font-outfit text-2xl font-semibold tracking-tight text-dark transition group-hover:text-blue minmd:text-3xl dark:text-white"
 						>
 							{article.title}
 						</h2>

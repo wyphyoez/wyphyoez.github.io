@@ -17,19 +17,19 @@
 
 <section
 	id="about"
-	class="grid gap-10 border-t border-zinc-200/80 py-20 sm:py-28 lg:grid-cols-[0.7fr_1.3fr] dark:border-white/10"
+	class="grid gap-10 border-t border-zinc-200/80 py-20 minmd:py-28 min-lg:grid-cols-[0.7fr_1.3fr] dark:border-white/10"
 >
 	<div>
 		<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">01 / About</p>
 		<h2
-			class="mt-4 font-outfit text-4xl font-semibold tracking-tight text-dark sm:text-5xl dark:text-white"
+			class="mt-4 font-outfit text-4xl font-semibold tracking-tight text-dark minmd:text-5xl dark:text-white"
 		>
 			Useful software, carefully made.
 		</h2>
 	</div>
 	<div class="max-w-2xl">
 		<p class="text-xl leading-9 text-zinc-700 dark:text-zinc-300">{info.about}</p>
-		<div class="mt-8 grid gap-4 sm:grid-cols-3">
+		<div class="mt-8 grid gap-4 minmd:grid-cols-3">
 			<div
 				class="rounded-2xl border border-zinc-200/80 bg-white/60 p-4 dark:border-white/10 dark:bg-white/5"
 			>
@@ -55,13 +55,15 @@
 <Experience title="LEARNING" details={info.education} />
 <ProjectsWrapper projects={info.projects} />
 
-<section class="mb-12 rounded-[2rem] bg-dark p-8 text-white sm:p-12 dark:bg-white dark:text-dark">
-	<div class="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+<section
+	class="mb-12 rounded-[2rem] bg-dark p-8 text-white minmd:p-12 dark:bg-white dark:text-dark"
+>
+	<div class="flex flex-col gap-8 minmd:flex-row minmd:items-end minmd:justify-between">
 		<div class="max-w-xl">
 			<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">
 				Let’s make something useful
 			</p>
-			<h2 class="mt-4 font-outfit text-4xl font-semibold leading-tight sm:text-5xl">
+			<h2 class="mt-4 font-outfit text-4xl font-semibold leading-tight minmd:text-5xl">
 				Have a problem worth working on?
 			</h2>
 		</div>
