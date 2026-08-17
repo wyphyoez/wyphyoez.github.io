@@ -1,5 +1,14 @@
 # Wai Yan Phyoe Cloudflare Pages Update
 
+## Rich Hero and Footer Enhancement
+
+- [x] Audit the current Hero/Footer content, hierarchy, and responsive structure.
+- [x] Add richer verified identity, availability, capability, and contact information.
+- [x] Improve Hero visual composition, CTA hierarchy, and contextual details.
+- [x] Improve Footer navigation, contact block, social/project links, and closing brand statement.
+- [x] Verify mobile and desktop layout, accessibility, links, lint, tests, and production build.
+- [ ] Push the enriched Hero/Footer revision and redeploy Cloudflare Pages.
+
 ## Responsive Recovery Pass
 
 - [x] Audit current git state, layout wrapper, Header state logic, breakpoint definitions, and recent responsive edits.
@@ -7,7 +16,7 @@
 - [x] Restore a working mobile Header menu using explicit Svelte state and stable breakpoint classes.
 - [x] Reconcile Hero/Footer styles with the original design without breaking other routes.
 - [x] Verify homepage, articles, projects, about, and uses at mobile and desktop widths.
-- [ ] Run lint, tests, production build, push to GitHub, and redeploy Cloudflare Pages.
+- [x] Run lint, tests, production build, push to GitHub, and redeploy Cloudflare Pages.
 
 ## Screenshot-driven Hero and Footer Revision
 
