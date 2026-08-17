@@ -183,3 +183,96 @@ li {
 		padding-right: 2rem !important;
 	}
 }
+
+/* Article reading system: readable measure, calm rhythm, visible anchors, and strong dark-mode contrast. */
+.article-reading {
+	max-width: 70ch;
+}
+
+.article-reading :global(h2),
+.article-reading :global(h3),
+.article-reading :global(h4) {
+	font-family: Outfit, SplineSans, system-ui, sans-serif;
+	font-weight: 600;
+	letter-spacing: -0.035em;
+	line-height: 1.15;
+	color: #18191d;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.dark .article-reading :global(h2),
+.dark .article-reading :global(h3),
+.dark .article-reading :global(h4) {
+	color: #f4f4f5;
+}
+
+.article-reading :global(p),
+.article-reading :global(ul),
+.article-reading :global(ol),
+.article-reading :global(blockquote),
+.article-reading :global(pre) {
+	margin-top: 1.25rem;
+}
+
+.article-reading :global(p:first-child) {
+	margin-top: 0;
+}
+
+.article-reading :global(a) {
+	color: #1683e8;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+}
+
+.article-reading :global(ul),
+.article-reading :global(ol) {
+	padding-left: 1.35rem;
+}
+
+.article-reading :global(li + li) {
+	margin-top: 0.55rem;
+}
+
+.article-reading :global(blockquote) {
+	border-left: 3px solid #248aff;
+	padding: 0.25rem 0 0.25rem 1.1rem;
+	color: #656a73;
+	font-style: italic;
+}
+
+.dark .article-reading :global(blockquote) {
+	color: #a1a1aa;
+}
+
+.article-reading :global(pre) {
+	overflow-x: auto;
+	border: 1px solid rgba(148, 163, 184, 0.2);
+	border-radius: 1rem;
+	padding: 1rem;
+	background: #111318;
+	color: #e4e4e7;
+	font-size: 0.9rem;
+	line-height: 1.7;
+}
+
+.article-reading :global(code:not(pre code)) {
+	border-radius: 0.35rem;
+	padding: 0.15rem 0.35rem;
+	background: rgba(36, 138, 255, 0.1);
+	color: #126ac2;
+	font-size: 0.9em;
+}
+
+.dark .article-reading :global(code:not(pre code)) {
+	color: #7fc1ff;
+}
+
+.article-reading :global(img),
+.article-reading :global(video) {
+	width: 100%;
+	height: auto;
+	margin-top: 1.75rem;
+	border-radius: 1.25rem;
+}

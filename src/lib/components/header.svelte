@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { info } from '$lib/utils/info';
 	import { browser } from '$app/environment';
+	import Icon from '$lib/components/Icon.svelte';
 
 	let show = false;
 	let menu = false;
@@ -31,8 +32,8 @@
 		aria-label="Primary navigation"
 		class={`mx-auto flex h-14 max-w-5xl items-center rounded-full border px-3 transition duration-300 ${
 			show
-				? 'border-zinc-200/80 bg-white/80 shadow-lg shadow-zinc-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/80'
-				: 'border-transparent bg-white/30 backdrop-blur-md dark:bg-zinc-950/20'
+				? 'border-zinc-200/80 bg-white/80 text-zinc-700 shadow-lg shadow-zinc-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/80 dark:text-zinc-100'
+				: 'border-transparent bg-transparent text-white shadow-none backdrop-blur-none'
 		}`}
 	>
 		<div class="flex min-w-0 flex-1 items-center gap-3">
@@ -56,7 +57,11 @@
 						<circle cx="29.5" cy="12" r="3" fill="#248aff" />
 					</svg>
 				</span>
-				<span class="font-outfit text-sm font-semibold tracking-tight dark:text-white">
+				<span
+					class={`font-outfit text-sm font-semibold tracking-tight ${
+						show ? 'text-zinc-800 dark:text-white' : 'text-white'
+					}`}
+				>
 					{info.handle}
 				</span>
 			</a>
@@ -67,7 +72,11 @@
 				<li>
 					<a
 						href={navLink.path}
-						class="rounded-full px-3 py-2 text-sm font-medium text-zinc-600 transition hover:bg-zinc-100 hover:text-dark focus:outline-none focus:ring-2 focus:ring-blue dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-white"
+						class={`rounded-full px-3 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-blue ${
+							show
+								? 'text-zinc-600 hover:bg-zinc-100 hover:text-dark dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-white'
+								: 'text-white/85 hover:bg-white/10 hover:text-white'
+						}`}
 					>
 						{navLink.title}
 					</a>
@@ -80,7 +89,11 @@
 				href={info.socialMedia.github}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="hidden rounded-full border border-zinc-200 px-4 py-2 text-sm font-semibold text-zinc-700 transition hover:border-blue hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue dark:border-white/10 dark:text-zinc-100 dark:hover:border-blue dark:hover:text-blue minmd:inline-flex"
+				class={`hidden rounded-full border px-4 py-2 text-sm font-semibold transition hover:border-blue hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue minmd:inline-flex ${
+					show
+						? 'border-zinc-200 text-zinc-700 dark:border-white/10 dark:text-zinc-100'
+						: 'border-white/40 text-white hover:border-white hover:text-white'
+				}`}
 			>
 				GitHub
 			</a>
@@ -90,12 +103,16 @@
 				aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
 				aria-checked={isDarkMode}
 				on:click={toggleTheme}
-				class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-700 transition hover:-translate-y-0.5 hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20"
+				class={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue ${
+					show
+						? 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20'
+						: 'bg-white/10 text-white hover:bg-white/20'
+				}`}
 			>
 				{#if isDarkMode}
-					<span aria-hidden="true">☼</span>
+					<Icon name="sun" className="h-4 w-4" />
 				{:else}
-					<span aria-hidden="true">◐</span>
+					<Icon name="moon" className="h-4 w-4" />
 				{/if}
 			</button>
 			<button
@@ -104,9 +121,17 @@
 				aria-expanded={menu}
 				aria-controls="mobile-menu"
 				on:click={() => (menu = !menu)}
-				class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-700 transition hover:-translate-y-0.5 hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20 minmd:hidden"
+				class={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue minmd:hidden ${
+					show
+						? 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20'
+						: 'bg-white/10 text-white hover:bg-white/20'
+				}`}
 			>
-				<span aria-hidden="true">{menu ? '×' : '☰'}</span>
+				{#if menu}
+					<Icon name="close" className="h-5 w-5" />
+				{:else}
+					<Icon name="menu" className="h-5 w-5" />
+				{/if}
 			</button>
 		</div>
 	</nav>

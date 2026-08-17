@@ -1,5 +1,14 @@
 # Wai Yan Phyoe Cloudflare Pages Update
 
+## Header Scroll, Articles, and Icon Refinement
+
+- [x] Audit Header scroll state, article routes/layout, and every visible icon treatment.
+- [x] Make the Header transparent at scroll top and glass only after scrolling.
+- [x] Replace emoji/text symbols with consistent accessible SVG icons.
+- [x] Improve article listing and article reading typography, metadata, navigation, and mobile spacing.
+- [x] Verify top/scroll Header states, article routes, icon accessibility, lint, tests, and production build.
+- [ ] Push the refinement and redeploy Cloudflare Pages.
+
 ## Header, Logo, and Floating Layout Revision
 
 - [x] Audit current Header positioning, Hero top spacing, logo assets, and control dimensions.
@@ -7,7 +16,7 @@
 - [x] Make Dark/Light toggle and mobile Menu button equal circular controls.
 - [x] Prevent the floating Header from overlapping the Hero content on mobile and desktop.
 - [x] Verify screenshots, accessibility, routes, lint, tests, and production build.
-- [ ] Push the Header/logo revision and redeploy Cloudflare Pages.
+- [x] Push the Header/logo revision and redeploy Cloudflare Pages.
 
 ## Rich Hero and Footer Enhancement
 
