@@ -1,5 +1,14 @@
 # Wai Yan Phyoe Cloudflare Pages Update
 
+## Header, Logo, and Floating Layout Revision
+
+- [x] Audit current Header positioning, Hero top spacing, logo assets, and control dimensions.
+- [x] Add a new visible logo/brand mark to the Header and favicon path.
+- [x] Make Dark/Light toggle and mobile Menu button equal circular controls.
+- [x] Prevent the floating Header from overlapping the Hero content on mobile and desktop.
+- [x] Verify screenshots, accessibility, routes, lint, tests, and production build.
+- [ ] Push the Header/logo revision and redeploy Cloudflare Pages.
+
 ## Rich Hero and Footer Enhancement
 
 - [x] Audit the current Hero/Footer content, hierarchy, and responsive structure.
@@ -7,7 +16,7 @@
 - [x] Improve Hero visual composition, CTA hierarchy, and contextual details.
 - [x] Improve Footer navigation, contact block, social/project links, and closing brand statement.
 - [x] Verify mobile and desktop layout, accessibility, links, lint, tests, and production build.
-- [ ] Push the enriched Hero/Footer revision and redeploy Cloudflare Pages.
+- [x] Push the enriched Hero/Footer revision and redeploy Cloudflare Pages.
 
 ## Responsive Recovery Pass
 

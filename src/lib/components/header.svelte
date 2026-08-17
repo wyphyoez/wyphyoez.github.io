@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 	import { info } from '$lib/utils/info';
-	import profile from '$lib/images/profile.jpg';
 	import { browser } from '$app/environment';
 
 	let show = false;
@@ -42,11 +41,21 @@
 				class="flex items-center gap-3 rounded-full p-1.5 focus:outline-none focus:ring-2 focus:ring-blue"
 				aria-label="Wai Yan Phyoe home"
 			>
-				<img
-					src={profile}
-					alt="Portrait of Wai Yan Phyoe"
-					class="h-9 w-9 rounded-full object-cover"
-				/>
+				<span
+					class="brand-mark inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#15161a] text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.14),0_6px_18px_rgba(36,138,255,0.18)]"
+					aria-hidden="true"
+				>
+					<svg viewBox="0 0 40 40" class="h-7 w-7" fill="none">
+						<path
+							d="M10 28.5 17.5 11l5 11 3-6 4.5 12.5"
+							stroke="currentColor"
+							stroke-width="3.2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<circle cx="29.5" cy="12" r="3" fill="#248aff" />
+					</svg>
+				</span>
 				<span class="font-outfit text-sm font-semibold tracking-tight dark:text-white">
 					{info.handle}
 				</span>
@@ -81,7 +90,7 @@
 				aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
 				aria-checked={isDarkMode}
 				on:click={toggleTheme}
-				class="rounded-full bg-zinc-100 p-2 text-zinc-700 transition hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20"
+				class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-700 transition hover:-translate-y-0.5 hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20"
 			>
 				{#if isDarkMode}
 					<span aria-hidden="true">☼</span>
@@ -95,7 +104,7 @@
 				aria-expanded={menu}
 				aria-controls="mobile-menu"
 				on:click={() => (menu = !menu)}
-				class="rounded-full bg-zinc-100 p-2 text-zinc-700 transition hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20 minmd:hidden"
+				class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-700 transition hover:-translate-y-0.5 hover:bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20 minmd:hidden"
 			>
 				<span aria-hidden="true">{menu ? '×' : '☰'}</span>
 			</button>
