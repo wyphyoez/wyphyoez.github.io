@@ -1,0 +1,15 @@
+# Live Website Audit — Wai Yan Phyoe (@wyphyoez)
+
+The deployed Cloudflare Pages homepage is reachable at `https://wyphyoez.pages.dev/` and returns a successful page response. The live page correctly shows the identity **Wai Yan Phyoe (@wyphyoez)** and uses a large gradient headline, a compact header, a dark-mode switch, a Resume link, a hero scroll cue, education cards, project cards, and a footer.
+
+The strongest existing elements are the clear identity, the large typographic hero, and the simple route structure. The highest-impact weaknesses are that the Resume link still points to `https://google.com`, project cards reuse the same HooBank thumbnail for Astro Portfolio, the article route appears very bare, the hero has excessive empty vertical space before the next content block, social links still use the old `waiyanphioe` handle, project-card icon labels are generic `Social Media`, and the homepage copy is broad rather than outcome-oriented.
+
+The upgrade should preserve the SvelteKit architecture and existing routes while improving content hierarchy, project credibility, route discoverability, contact/Resume trust signals, accessibility labels, and responsive rhythm. The design should remain recognizable rather than replacing the original identity wholesale.
+
+## Local Upgrade Verification
+
+The upgraded homepage now has a compact rounded navigation bar, a stronger dark-mode composition, a clear role label, distinct full name and handle, actionable hero CTAs, and a live-location card. The main content rhythm is much tighter than the original and the project cards now expose real source/live-preview labels.
+
+The upgraded `/articles` route renders correctly with a field-notes header, numbered article rows, previews, dates, reading times, and pagination controls. The existing seed articles still include generic template content such as “Getting Started” and “Lorem Ipsum”; this is now clearly visible as a content-quality issue rather than a layout issue. Those articles should be replaced or rewritten in a future content pass using Wai Yan Phyoe’s actual notes.
+
+The local article check exposed one remaining duplicate template entry: the original `articles/getting-started/index.md` file is still being globbed alongside the rewritten `articles/getting-started.md`. It should be removed or renamed so the public index contains only the three rewritten Wai Yan Phyoe notes.

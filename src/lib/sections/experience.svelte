@@ -3,23 +3,37 @@
 	export let details;
 </script>
 
-<section class="flex items-start justify-between md:flex-col flex-row dark:text-light">
-	<h2 class="w-[15rem] mt-16">{title}</h2>
-	<div class="w-full">
-		{#each details as item}
-			<div class="my-16">
-				<div class="flex justify-between items-center flex-wrap">
-					<h3 class="text-xl font-semibold">{item.name}</h3>
-					<p class="text-sm dark:text-gray">
-						{item.startDate} - {item.endDate}
-					</p>
+<section
+	class="grid gap-10 border-t border-zinc-200/80 py-20 sm:py-28 lg:grid-cols-[0.7fr_1.3fr] dark:border-white/10"
+>
+	<div>
+		<p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue">02 / {title}</p>
+		<h2
+			class="mt-4 font-outfit text-4xl font-semibold tracking-tight text-dark sm:text-5xl dark:text-white"
+		>
+			A practice of staying curious.
+		</h2>
+	</div>
+	<div
+		class="divide-y divide-zinc-200/80 border-y border-zinc-200/80 dark:divide-white/10 dark:border-white/10"
+	>
+		{#each details as item, index}
+			<div class="grid gap-4 py-7 sm:grid-cols-[5rem_1fr] sm:gap-8">
+				<span class="font-mono text-sm text-zinc-400">0{index + 1}</span>
+				<div>
+					<div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
+						<h3 class="font-outfit text-xl font-semibold text-dark dark:text-white">{item.name}</h3>
+						<p class="text-sm text-zinc-400">{item.startDate} — {item.endDate}</p>
+					</div>
+					<p class="mt-2 text-sm font-medium text-blue">{item.location}</p>
+					<ul class="mt-4 space-y-2 text-sm leading-7 text-zinc-600 dark:text-zinc-400">
+						{#each item.description as point}
+							<li class="flex gap-3">
+								<span class="text-blue" aria-hidden="true">↳</span><span>{point}</span>
+							</li>
+						{/each}
+					</ul>
 				</div>
-				<p class="text-sm mt-3 text-blue">{item.location}</p>
-				<ul class="mt-3">
-					{#each item.description as item}
-						<li class="dark:text-gray">{item}</li>
-					{/each}
-				</ul>
 			</div>
 		{/each}
 	</div>

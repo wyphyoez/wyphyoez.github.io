@@ -1,40 +1,77 @@
 <script>
 	export let name;
+	export let handle;
+	export let jobDescription;
+	export let location;
 </script>
 
-<section class="min-h-screen">
-	<div class="min-h-screen flex flex-col justify-start md:justify-center items-center flex-wrap">
-		<div class="w-full flex justify-center items-center flex-wrap">
-			<div>
-				<p class="dark:text-light mt-[10rem] sm:mt-[6rem] text-[1rem]">Hi, I'm</p>
-				<h1
-					class="main-heading font-outfit text-[6rem] lg:text-[5rem] md:text-[4rem] sm:text-[3rem]"
+<section
+	id="top"
+	class="relative flex min-h-[calc(100vh-5rem)] items-center overflow-hidden py-24 sm:py-28"
+>
+	<div
+		class="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-blue/10 blur-3xl dark:bg-blue/20"
+		aria-hidden="true"
+	/>
+	<div
+		class="pointer-events-none absolute -right-24 bottom-16 h-80 w-80 rounded-full bg-fuchsia-300/10 blur-3xl dark:bg-fuchsia-500/10"
+		aria-hidden="true"
+	/>
+	<div class="relative z-10 grid w-full items-end gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
+		<div class="max-w-4xl">
+			<p
+				class="mb-5 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.22em] text-blue"
+			>
+				<span class="h-px w-8 bg-blue" aria-hidden="true" />
+				{jobDescription}
+			</p>
+			<h1
+				class="font-outfit text-5xl font-semibold leading-[0.98] tracking-[-0.06em] text-dark sm:text-7xl lg:text-[7.5rem] dark:text-white"
+			>
+				{name}<span class="text-blue">.</span>
+			</h1>
+			<p class="mt-5 font-outfit text-xl font-medium text-zinc-500 sm:text-2xl dark:text-zinc-300">
+				{handle} <span class="mx-2 text-blue" aria-hidden="true">/</span> I build things for the web.
+			</p>
+			<p class="mt-8 max-w-2xl text-base leading-8 text-zinc-600 sm:text-lg dark:text-zinc-400">
+				I design and develop clear, useful interfaces for products that need to work in the real
+				world—not just look good in a screenshot.
+			</p>
+			<div class="mt-9 flex flex-wrap items-center gap-3">
+				<a
+					href="/#about"
+					class="inline-flex items-center gap-3 rounded-full bg-dark px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-zinc-900/10 transition hover:-translate-y-0.5 hover:bg-blue focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white dark:text-dark dark:hover:bg-blue dark:hover:text-white"
 				>
-					<span>{name}.</span><br />
-					<span>I build things for the web.</span>
-				</h1>
-				<p class="dark:text-light text-lg">
-					A Software engineer with a passion for solving problems and learning new things.
-				</p>
+					Explore the work <span aria-hidden="true">↓</span>
+				</a>
+				<a
+					href="mailto:waiyanphyoe@gmail.com"
+					class="inline-flex items-center rounded-full border border-zinc-300 px-5 py-3 text-sm font-semibold text-zinc-700 transition hover:border-blue hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue dark:border-white/15 dark:text-zinc-200 dark:hover:border-blue dark:hover:text-blue"
+				>
+					Start a conversation
+				</a>
 			</div>
 		</div>
 
-		<div class="text-center absolute bottom-5">
-			<a
-				href="/#about"
-				class="animate-bounce md:hidden left-1/2 transform -translate-x-1/2 flex items-center flex-col text-dark dark:text-light"
+		<aside
+			class="max-w-sm justify-self-start rounded-[2rem] border border-zinc-200/80 bg-white/70 p-6 shadow-xl shadow-zinc-900/5 backdrop-blur-xl lg:justify-self-end dark:border-white/10 dark:bg-white/5"
+		>
+			<p class="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400">Currently</p>
+			<p class="mt-4 font-outfit text-2xl font-semibold leading-tight text-dark dark:text-white">
+				Building with intention.
+			</p>
+			<div class="mt-6 flex items-center gap-3 text-sm text-zinc-600 dark:text-zinc-400">
+				<span
+					class="h-2.5 w-2.5 rounded-full bg-emerald-400 shadow-[0_0_0_5px_rgba(52,211,153,0.12)]"
+					aria-hidden="true"
+				/>
+				{location}
+			</div>
+			<div
+				class="mt-4 border-t border-zinc-200/80 pt-4 text-sm leading-6 text-zinc-500 dark:border-white/10 dark:text-zinc-400"
 			>
-				<p>Scroll Down</p>
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-					<path
-						d="M11.975 22H12c3.859 0 7-3.14 7-7V9c0-3.841-3.127-6.974-6.981-7h-.06C8.119 2.022 5 5.157 5 9v6c0 3.86 3.129 7 6.975 7zM7 9a5.007 5.007 0 0 1 4.985-5C14.75 4.006 17 6.249 17 9v6c0 2.757-2.243 5-5 5h-.025C9.186 20 7 17.804 7 15V9z"
-					/>
-					<path d="M11 6h2v6h-2z" />
-				</svg>
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-					<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" />
-				</svg>
-			</a>
-		</div>
+				Open to thoughtful product work, collaborative teams, and problems worth solving.
+			</div>
+		</aside>
 	</div>
 </section>

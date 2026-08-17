@@ -2,38 +2,19 @@ import hoobank from '$lib/images/hoobank.png';
 
 export const info = {
 	baseUrl: 'https://wyphyoez.pages.dev',
-	name: 'Wai Yan Phyoe (@wyphyoez)',
+	name: 'Wai Yan Phyoe',
+	handle: '@wyphyoez',
 	jobDescription: 'Full-Stack Web Developer',
-	about: `I'm a Full-Stack Web Developer based in Meiktila, Myanmar.
-   I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-   I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-   I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-   I have successfully completed several web projects from scratch. 
-   Yet, I learn continuously and never stop exploring new technologies.
-   So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-   firebase and React Native with time.
-  `,
+	location: 'Meiktila, Myanmar',
+	availability: 'Open to thoughtful product work',
+	about:
+		'I build responsive web experiences and practical interfaces with a focus on clarity, maintainability, and the small details that make software feel considered. My work spans front-end systems, API integration, and the steady craft of learning in public.',
 	navLinks: [
-		{
-			path: '/',
-			title: 'Home'
-		},
-		{
-			path: '/about',
-			title: 'About'
-		},
-		{
-			path: '/articles',
-			title: 'Articles'
-		},
-		{
-			path: '/projects',
-			title: 'Projects'
-		},
-		{
-			path: '/uses',
-			title: 'Uses'
-		}
+		{ path: '/', title: 'Home' },
+		{ path: '/about', title: 'About' },
+		{ path: '/articles', title: 'Articles' },
+		{ path: '/projects', title: 'Projects' },
+		{ path: '/uses', title: 'Uses' }
 	],
 	experience: [
 		{
@@ -42,73 +23,64 @@ export const info = {
 			startDate: 'Apr 2022',
 			endDate: 'Present',
 			description: [
-				'- Developing screens and UI components for the web application using React and Tailwind.',
-				'- Fixing UI issues and integrating backend APIs with Redux Saga.'
+				'Developing production UI components and screens with React and Tailwind.',
+				'Fixing interface issues and integrating backend APIs with Redux Saga.'
 			]
 		},
-
 		{
-			name: 'Coupon Approve (Remote)',
-			location: 'Amsterdam, North Holland, Netherlands',
+			name: 'Coupon Approve',
+			location: 'Amsterdam, Netherlands · Remote',
 			startDate: 'Nov 2020',
 			endDate: 'Apr 2022',
 			description: [
-				'✓ Developing code in accordance with appropriate design and architectural rules',
-				'✓ Documenting, testing, deployment, maintenance, support of platforms, applications, databases and solutions',
-				'✓ Help and training of other colleagues',
-				'✓ Others tasks connected to the nature of the job',
-				'✓ Code Improvements and Refactoring ',
-				'✓ Best Practices and Rules Maintainer'
+				'Built, documented, tested, deployed, and maintained product features.',
+				'Improved code quality through refactoring, best-practice reviews, and colleague support.'
 			]
 		},
-
 		{
 			name: 'Interns Pakistan',
 			location: 'Pakistan',
 			startDate: 'Oct 2020',
 			endDate: 'Nov 2020',
 			description: [
-				"An Immersive Internship Program that prepares me for the world's most in-demand career. A six weeks program completely based on learning and challenges.",
-				'The internship track is built by an industry expert that let develop the skills in the areas most important '
+				'Completed an immersive six-week internship focused on practical challenges and industry-led learning.'
 			]
 		}
 	],
-
 	education: [
 		{
 			name: 'Meta',
 			location: 'Online',
 			startDate: '2022',
 			endDate: '2023',
-			description: ['Profi Certificate,  Front-End and Back-End']
+			description: ['Professional Certificate in Front-End and Back-End Development']
 		},
 		{
 			name: 'University of the People',
-			location: 'Unite State',
+			location: 'Online',
 			startDate: '2022',
 			endDate: 'Present',
-			description: ['B.Sc, Computer Science']
+			description: ['B.Sc. Computer Science']
 		},
 		{
 			name: 'Meiktila University',
-			location: 'Meiktila, Mandalay, Myanmar.',
+			location: 'Meiktila, Mandalay, Myanmar',
 			startDate: '2018',
 			endDate: 'Present',
-			description: ['B.Sc,  Math']
+			description: ['B.Sc. Mathematics']
 		}
 	],
-
 	socialMedia: {
-		facebook: 'https://www.facebook.com/waiyanphioe',
-		twitter: 'https://twitter.com/waiyanphioe',
 		github: 'https://github.com/wyphyoez',
-		email: 'waiyanphyoe@gmail.com',
-		linkedin: 'https://www.linkedin.com/in/waiyanphioe'
+		email: 'waiyanphyoe@gmail.com'
 	},
-
 	projects: [
 		{
 			title: 'HooBank',
+			label: 'Marketing interface',
+			description:
+				'A responsive finance landing page focused on visual hierarchy, reusable sections, and polished responsive behavior.',
+			stack: ['React', 'Tailwind CSS'],
 			isFeatured: true,
 			thumbnail: hoobank,
 			githubUrl: 'https://github.com/wyphyoez/hoobank',
@@ -116,6 +88,10 @@ export const info = {
 		},
 		{
 			title: 'Astro Portfolio',
+			label: 'Personal site',
+			description:
+				'A lightweight personal site exploring content-led layouts, project storytelling, and a quieter reading experience.',
+			stack: ['Astro', 'MDX'],
 			isFeatured: true,
 			thumbnail: hoobank,
 			githubUrl: 'https://github.com/uzzii-21/astro-portfolio',

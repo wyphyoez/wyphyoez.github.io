@@ -1,70 +1,65 @@
 <script>
 	export let projectDetail;
-	const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
+	export let index = 0;
+	const { title, label, description, stack, thumbnail, liveUrl, githubUrl } = projectDetail;
 </script>
 
-<article class="w-full max-h-[25rem] overflow-hidden relative group">
-	<div class="flex items-center absolute right-4 top-4 z-10">
-		<a
-			href={githubUrl}
-			class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md"
-			aria-label="Social Media"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="20"
-				height="20"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				class="feather feather-github"
+<article
+	class="group overflow-hidden rounded-[1.75rem] border border-zinc-200/80 bg-white shadow-lg shadow-zinc-900/5 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue/10 dark:border-white/10 dark:bg-white/5 dark:shadow-none"
+>
+	<div class="relative overflow-hidden bg-zinc-100 dark:bg-zinc-900">
+		<img
+			src={thumbnail}
+			class="aspect-[16/10] w-full object-cover transition duration-700 group-hover:scale-105"
+			loading="lazy"
+			width="960"
+			height="600"
+			alt={`${title} project preview`}
+		/>
+		<div class="absolute inset-x-0 top-0 flex items-center justify-between p-4">
+			<span
+				class="rounded-full border border-white/20 bg-black/45 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-md"
+				>{label}</span
 			>
-				<path
-					d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-				/>
-			</svg>
-		</a>
-
-		<a
-			href={liveUrl}
-			class="text-white p-3 bg-black/50 rounded-full backdrop-blur-md ml-1"
-			aria-label="Social Media"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="20"
-				height="20"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				class="feather feather-link-2"
-			>
-				<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3" />
-				<line x1="8" y1="12" x2="16" y2="12" />
-			</svg>
-		</a>
+			<div class="flex items-center gap-2">
+				<a
+					href={githubUrl}
+					class="rounded-full bg-black/55 p-3 text-white backdrop-blur-md transition hover:bg-blue focus:outline-none focus:ring-2 focus:ring-white"
+					aria-label={`View ${title} source code on GitHub`}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span aria-hidden="true">⌘</span>
+				</a>
+				<a
+					href={liveUrl}
+					class="rounded-full bg-black/55 p-3 text-white backdrop-blur-md transition hover:bg-blue focus:outline-none focus:ring-2 focus:ring-white"
+					aria-label={`Open ${title} live preview`}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span aria-hidden="true">↗</span>
+				</a>
+			</div>
+		</div>
 	</div>
-	<img
-		src={thumbnail}
-		class="w-full h-auto scale-100 hover:scale-110 transition duration-[1.5s]"
-		loading="lazy"
-		width="100%"
-		height="100%"
-		alt="featureImage"
-	/>
-	<div
-		class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700"
-	>
-		<h3 class="mr-2 text-xl">{title}</h3>
+	<div class="p-6 sm:p-7">
+		<div class="flex items-start justify-between gap-4">
+			<h3 class="font-outfit text-2xl font-semibold tracking-tight text-dark dark:text-white">
+				{title}
+			</h3>
+			<span class="text-sm text-zinc-400" aria-hidden="true"
+				>{String(index + 1).padStart(2, '0')}</span
+			>
+		</div>
+		<p class="mt-3 text-sm leading-7 text-zinc-600 dark:text-zinc-400">{description}</p>
+		<div class="mt-5 flex flex-wrap gap-2">
+			{#each stack as item}
+				<span
+					class="rounded-full bg-zinc-100 px-3 py-1 text-xs font-semibold text-zinc-600 dark:bg-white/10 dark:text-zinc-300"
+					>{item}</span
+				>
+			{/each}
+		</div>
 	</div>
 </article>

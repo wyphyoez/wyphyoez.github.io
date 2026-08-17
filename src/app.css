@@ -155,3 +155,31 @@ li {
 		background-position: 0% 50%;
 	}
 }
+
+/* Wai Yan Phyoe visual system: keep the blue accent precise, use soft depth over flat surfaces, and preserve a calm rhythm. */
+:focus-visible {
+	outline: 2px solid #248aff;
+	outline-offset: 3px;
+}
+
+::selection {
+	background: rgba(36, 138, 255, 0.22);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+	}
+}

@@ -1,14 +1,10 @@
 ---
-title: Getting Started
-date: 2022-01-02
+title: What belongs in a project card?
+date: 2026-08-10
 ---
 
-Most of the site is themed using Tailwind's [typography plugin](https://tailwindcss.com/docs/typography-plugin). You can view the configuration in `tailwind.config.cjs`. As mentioned at the beginning of this post, the overall theme is taken from [Tailwind's "Spotlight"](https://spotlight.tailwindui.com/).
+A project card should answer three questions quickly: what is this, why might it matter, and where can I inspect it?
 
-If you wish to change the theme of your code blocks, you can edit the `src/prism.css` file. Prism themes can be [found here](https://github.com/PrismJS/prism-themes/tree/master/themes).
+That is why a useful card needs more than a screenshot and a title. A short description gives the work a point of view. A small stack label sets expectations. Separate links for source code and a live preview let a visitor choose the depth of exploration.
 
-```javascript
-function helloWorld() {
-	return 'Hello World';
-}
-```
+The visual treatment should support that information rather than hide it. Images can create the first impression, but text and labels are what make a project credible after the first second.
