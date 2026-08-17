@@ -1,4 +1,5 @@
 <script>
+	import Icon from '$lib/components/Icon.svelte';
 	import { info } from '$lib/utils/info';
 </script>
 
@@ -64,7 +65,7 @@
 			<a
 				href={`mailto:${info.socialMedia.email}`}
 				class="inline-flex w-fit rounded-full bg-dark px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue focus:outline-none focus:ring-2 focus:ring-blue dark:bg-white dark:text-dark"
-				>Say hello ↗</a
+				>Say hello <Icon name="arrowUpRight" className="h-4 w-4" /></a
 			>
 		</div>
 	</div>

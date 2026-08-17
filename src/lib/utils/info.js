@@ -1,7 +1,7 @@
 import hoobank from '$lib/images/hoobank.png';
 
 export const info = {
-	baseUrl: 'https://wyphyoez.pages.dev',
+	baseUrl: 'https://wyphyoez.cyou',
 	name: 'Wai Yan Phyoe',
 	handle: '@wyphyoez',
 	jobDescription: 'Full-Stack Web Developer',

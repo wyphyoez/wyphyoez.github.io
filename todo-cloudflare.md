@@ -67,3 +67,10 @@
 - [x] Commit and push the corrected original project to GitHub main.
 - [x] Configure or trigger Cloudflare Pages deployment for wyphyoez/wyphyoez.github.io.
 - [x] Verify the resulting Pages deployment URL and status.
+
+## Final Canonical and Content Audit
+
+- [x] Audit About and Uses pages for the upgraded editorial system and identity consistency.
+- [x] Set the canonical and social metadata base URL to https://wyphyoez.cyou.
+- [x] Replace the About CTA text arrow with the shared SVG arrow icon.
+- [ ] Commit the canonical/content cleanup and redeploy Cloudflare Pages.
