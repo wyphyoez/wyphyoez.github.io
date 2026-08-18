@@ -116,3 +116,9 @@
 - [x] Give the mobile Header one shared outer boundary with balanced insets around the brand and control groups.
 - [x] Simplify visible contact CTAs to ask@wyphyoez.cyou without an Email prefix.
 - [x] Validate the resulting light/dark mobile Header, then commit and redeploy.
+
+## Mobile Dropdown Menu Refinement
+
+- [x] Inspect the open mobile menu’s boundary, Header spacing, surfaces, navigation rows, and CTA in dark and light states.
+- [x] Refine the dropdown to share the Header’s visual language and maintain clear mobile hierarchy.
+- [x] Validate the open-menu layout at phone width, then commit and redeploy.

@@ -20,6 +20,12 @@
 		? 'border-white/10 bg-white/10 text-white hover:bg-white/15'
 		: 'border-zinc-200 bg-zinc-100 text-zinc-700 hover:bg-zinc-200';
 
+	$: menuSurface = isDarkMode
+		? 'border-white/10 shadow-2xl shadow-black/35'
+		: 'border-zinc-200/90 shadow-xl shadow-zinc-900/10';
+
+	$: menuDivider = isDarkMode ? 'border-white/10' : 'border-zinc-200/80';
+
 	function handler() {
 		show = window.scrollY > 32;
 	}
@@ -143,31 +149,37 @@
 	{#if menu}
 		<div id="mobile-menu" class="mx-auto mt-2 max-w-5xl minmd:hidden">
 			<div
-				class="rounded-3xl border border-zinc-200/80 bg-white/95 p-3 shadow-xl shadow-zinc-900/10 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/95"
+				class={`overflow-hidden rounded-[1.75rem] border p-1.5 ${menuSurface}`}
+				style={`background-color: ${isDarkMode ? '#09090b' : '#ffffff'}`}
 			>
-				<ul class="grid gap-1">
+				<div class={`border-b px-3.5 pb-2.5 pt-2 ${menuDivider}`}>
+					<p class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-400">
+						Navigation
+					</p>
+				</div>
+				<ul class="grid gap-1 px-1 py-2">
 					{#each info.navLinks as navLink}
 						<li>
 							<a
 								href={navLink.path}
 								on:click={() => (menu = false)}
-								class="block rounded-2xl px-4 py-3 text-sm font-semibold text-zinc-700 transition hover:bg-zinc-100 hover:text-blue dark:text-zinc-200 dark:hover:bg-white/10 dark:hover:text-blue"
+								class="block rounded-2xl px-3.5 py-3 text-sm font-semibold text-zinc-700 transition hover:bg-zinc-100 hover:text-blue dark:text-zinc-200 dark:hover:bg-white/10 dark:hover:text-blue"
 							>
 								{navLink.title}
 							</a>
 						</li>
 					{/each}
-					<li>
-						<a
-							href={info.socialMedia.github}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="block rounded-2xl bg-dark px-4 py-3 text-sm font-semibold text-white dark:bg-white dark:text-dark"
-						>
-							View GitHub profile
-						</a>
-					</li>
 				</ul>
+				<div class={`border-t px-1 pt-2 ${menuDivider}`}>
+					<a
+						href={info.socialMedia.github}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="flex min-h-12 items-center justify-center rounded-2xl bg-dark px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue dark:bg-white dark:text-dark dark:hover:bg-blue dark:hover:text-white"
+					>
+						View GitHub profile
+					</a>
+				</div>
 			</div>
 		</div>
 	{/if}
