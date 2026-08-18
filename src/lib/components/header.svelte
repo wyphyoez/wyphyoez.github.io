@@ -9,10 +9,12 @@
 	let isDarkMode = true;
 
 	$: headerSurface = show
-		? 'border-zinc-200/80 bg-white/80 text-zinc-700 shadow-lg shadow-zinc-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/80 dark:text-zinc-100'
+		? 'border-zinc-200/80 text-zinc-700 shadow-lg shadow-zinc-900/5 backdrop-blur-xl dark:border-white/10 dark:text-zinc-100'
 		: isDarkMode
-		? 'border-white/10 bg-zinc-950/70 text-white shadow-xl shadow-black/15 backdrop-blur-xl'
-		: 'border-zinc-200/90 bg-white/80 text-zinc-800 shadow-lg shadow-zinc-900/5 backdrop-blur-xl';
+		? 'border-transparent bg-transparent text-white shadow-none backdrop-blur-none'
+		: 'border-transparent bg-transparent text-zinc-800 shadow-none backdrop-blur-none';
+
+	$: sharedSurfaceColor = isDarkMode ? '#18181b' : '#ffffff';
 
 	$: controlSurface = show
 		? 'border-zinc-200 bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:border-white/10 dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20'
@@ -49,6 +51,7 @@
 	<nav
 		aria-label="Primary navigation"
 		class={`mx-auto flex h-14 max-w-5xl items-center rounded-full border px-1.5 transition duration-300 ${headerSurface}`}
+		style={`background-color: ${show ? sharedSurfaceColor : 'transparent'}`}
 	>
 		<div class="flex min-w-0 flex-1 items-center gap-3">
 			<a
@@ -150,7 +153,7 @@
 		<div id="mobile-menu" class="mx-auto mt-2 max-w-5xl minmd:hidden">
 			<div
 				class={`overflow-hidden rounded-[1.75rem] border p-1.5 ${menuSurface}`}
-				style={`background-color: ${isDarkMode ? '#09090b' : '#ffffff'}`}
+				style={`background-color: ${sharedSurfaceColor}`}
 			>
 				<div class={`border-b px-3.5 pb-2.5 pt-2 ${menuDivider}`}>
 					<p class="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-zinc-400">

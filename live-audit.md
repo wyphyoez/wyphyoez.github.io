@@ -53,3 +53,7 @@ Shared Header boundary refinement: At 360×844, the mobile Header now has a sing
 Mobile dropdown refinement review: The new menu hierarchy keeps a Header-aligned panel, navigation label, grouped rows, and separated GitHub CTA. Light mode rendered the intended clean white surface at 360px. During the final dark-mode capture, the opaque-surface experiment showed page-content bleed-through beneath the menu, so the dark panel needs one further explicit-background correction before it is marked complete.
 
 Mobile dropdown final verification: The panel now uses explicit solid theme backgrounds, eliminating dark-mode page-content bleed-through. At 360×844, both dark and light open-menu states preserve the shared Header spacing, a clear Navigation label, readable row rhythm, a visually separated GitHub CTA, and clean viewport bounds.
+
+Transparent/Header surface verification: At 360×844 in dark mode, the pre-scroll Header computed to a fully transparent background and the scrolled Header computed to the intended dark surface. Visual captures confirm that the Header has no enclosing surface at the top and gains its bordered glass treatment only after scrolling.
+
+Matched Header/dropdown surface verification: At the scrolled position with the menu open, the Header and dropdown both computed to `rgb(24, 24, 27)` in dark mode and `rgb(255, 255, 255)` in light mode. The paired captures confirm aligned boundaries and matching theme surfaces while retaining the required transparent top state.

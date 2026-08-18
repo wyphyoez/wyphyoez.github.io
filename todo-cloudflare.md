@@ -122,3 +122,9 @@
 - [x] Inspect the open mobile menu’s boundary, Header spacing, surfaces, navigation rows, and CTA in dark and light states.
 - [x] Refine the dropdown to share the Header’s visual language and maintain clear mobile hierarchy.
 - [x] Validate the open-menu layout at phone width, then commit and redeploy.
+
+## Transparent Top Header and Matched Menu Surface
+
+- [x] Restore a transparent Header surface before scrolling in both light and dark modes.
+- [x] Match the scrolled Header and open mobile dropdown surface colors, borders, and depth.
+- [x] Validate top, scrolled, and open-menu states at phone width, then commit and redeploy.
