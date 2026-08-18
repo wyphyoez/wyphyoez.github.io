@@ -86,3 +86,15 @@
 - [x] Inspect the transparent top-state Header colors against the light-mode background.
 - [x] Ensure Header text, brand mark, theme icon, and menu icon remain visible before scrolling in light mode.
 - [x] Validate mobile and desktop light/dark states, then commit and redeploy.
+
+## Mobile Theme and Menu Interaction Check
+
+- [x] Verify the open mobile menu in dark mode at the top of a light-background route.
+- [x] Switch to light mode with the menu open and verify Header/menu contrast, hit areas, and overflow.
+- [x] Record screenshots and correct any state-specific responsive issue.
+
+## Mobile Header Alignment and Interaction Polish
+
+- [x] Normalize brand, theme, and menu control bounds and spacing at mobile widths.
+- [x] Replace unintended blue tap/focus backgrounds with a deliberate, accessible interaction treatment.
+- [x] Validate dark/light mobile states, build, commit, and redeploy.

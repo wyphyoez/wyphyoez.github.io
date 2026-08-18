@@ -30,7 +30,7 @@
 <header class="fixed left-0 right-0 top-0 z-30 px-4 pt-4 lg:pt-3">
 	<nav
 		aria-label="Primary navigation"
-		class={`mx-auto flex h-14 max-w-5xl items-center rounded-full border px-3 transition duration-300 ${
+		class={`mx-auto flex h-14 max-w-5xl items-center rounded-full border px-3.5 transition duration-300 ${
 			show
 				? 'border-zinc-200/80 bg-white/80 text-zinc-700 shadow-lg shadow-zinc-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/80 dark:text-zinc-100'
 				: `border-transparent bg-transparent shadow-none backdrop-blur-none ${
@@ -41,11 +41,11 @@
 		<div class="flex min-w-0 flex-1 items-center gap-3">
 			<a
 				href="/"
-				class="flex items-center gap-3 rounded-full p-1.5 focus:outline-none focus:ring-2 focus:ring-blue"
+				class="flex h-11 items-center gap-2.5 rounded-full select-none [-webkit-tap-highlight-color:transparent] focus:outline-none"
 				aria-label="Wai Yan Phyoe home"
 			>
 				<span
-					class="brand-mark inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#15161a] text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.14),0_6px_18px_rgba(36,138,255,0.18)]"
+					class="brand-mark inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#15161a] text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.14),0_6px_18px_rgba(36,138,255,0.18)]"
 					aria-hidden="true"
 				>
 					<svg viewBox="0 0 40 40" class="h-7 w-7" fill="none">
@@ -109,7 +109,7 @@
 				aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
 				aria-checked={isDarkMode}
 				on:click={toggleTheme}
-				class={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue ${
+				class={`inline-flex h-11 w-11 shrink-0 touch-manipulation select-none items-center justify-center rounded-full appearance-none transition active:scale-[0.96] [-webkit-tap-highlight-color:transparent] focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue ${
 					show
 						? 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20'
 						: isDarkMode
@@ -129,7 +129,7 @@
 				aria-expanded={menu}
 				aria-controls="mobile-menu"
 				on:click={() => (menu = !menu)}
-				class={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue minmd:hidden ${
+				class={`inline-flex h-11 w-11 shrink-0 touch-manipulation select-none items-center justify-center rounded-full appearance-none transition active:scale-[0.96] [-webkit-tap-highlight-color:transparent] focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue minmd:hidden ${
 					show
 						? 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20'
 						: isDarkMode
