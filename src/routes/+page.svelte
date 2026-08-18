@@ -71,7 +71,7 @@
 			href={`mailto:${info.socialMedia.email}`}
 			class="inline-flex w-fit items-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark transition hover:bg-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-blue dark:bg-dark dark:text-white dark:hover:bg-blue"
 		>
-			Email {info.handle} <span aria-hidden="true">↗</span>
+			Email {info.socialMedia.email} <span aria-hidden="true">↗</span>
 		</a>
 	</div>
 </section>

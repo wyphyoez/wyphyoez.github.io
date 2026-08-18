@@ -45,7 +45,13 @@
 				aria-label="Wai Yan Phyoe home"
 			>
 				<span
-					class="brand-mark inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#15161a] text-white shadow-[inset_0_0_0_1px_rgba(255,255,255,0.14),0_6px_18px_rgba(36,138,255,0.18)]"
+					class={`brand-mark inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition ${
+						show
+							? 'border-zinc-200 bg-zinc-100 text-zinc-800 shadow-sm dark:border-white/10 dark:bg-white/10 dark:text-white'
+							: isDarkMode
+							? 'border-white/10 bg-white/10 text-white shadow-[0_6px_18px_rgba(0,0,0,0.16)]'
+							: 'border-zinc-300 bg-zinc-900/10 text-zinc-800 shadow-sm'
+					}`}
 					aria-hidden="true"
 				>
 					<svg viewBox="0 0 40 40" class="h-7 w-7" fill="none">

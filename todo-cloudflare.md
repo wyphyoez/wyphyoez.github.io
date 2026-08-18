@@ -98,3 +98,9 @@
 - [x] Normalize brand, theme, and menu control bounds and spacing at mobile widths.
 - [x] Replace unintended blue tap/focus backgrounds with a deliberate, accessible interaction treatment.
 - [x] Validate dark/light mobile states, build, commit, and redeploy.
+
+## Logo Boundary and Identity Copy Correction
+
+- [x] Make the logo use the same rounded Header boundary treatment as the theme and menu controls.
+- [x] Audit visible identity copy for Wai Yan Phyoe, @wyphyoez, and ask@wyphyoez.cyou.
+- [x] Validate the corrected mobile Header, then commit and redeploy the SvelteKit site.
