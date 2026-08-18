@@ -72,6 +72,9 @@ export const info = {
 	],
 	socialMedia: {
 		github: 'https://github.com/wyphyoez',
+		linkedin: 'https://www.linkedin.com/in/wyphyoez/',
+		instagram: 'https://www.instagram.com/wyphyoez/',
+		x: 'https://x.com/wyphyoez',
 		email: 'ask@wyphyoez.cyou'
 	},
 	projects: [

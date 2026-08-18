@@ -28,6 +28,14 @@
 		<path
 			d="M9 19.5c-4.2 1.2-4.2-2.1-5.8-2.6M14.8 22v-3.3a2.9 2.9 0 0 0-.8-2.2c2.8-.3 5.7-1.4 5.7-6.2a4.8 4.8 0 0 0-1.3-3.4 4.5 4.5 0 0 0-.1-3.4s-1.1-.4-3.5 1.3a12 12 0 0 0-6.4 0C6 3.1 4.9 3.5 4.9 3.5a4.5 4.5 0 0 0-.1 3.4 4.8 4.8 0 0 0-1.3 3.4c0 4.8 2.9 5.9 5.7 6.2a2.9 2.9 0 0 0-.8 2.2V22"
 		/>
+	{:else if name === 'linkedin'}
+		<path d="M6.1 9.2V19M6.1 5.2v.1M10.5 19v-5.4a3.4 3.4 0 0 1 6.8 0V19M10.5 13.8V9.2" />
+	{:else if name === 'instagram'}
+		<rect x="3.5" y="3.5" width="17" height="17" rx="4.5" />
+		<circle cx="12" cy="12" r="3.8" />
+		<circle cx="17.4" cy="6.7" r="0.7" fill="currentColor" stroke="none" />
+	{:else if name === 'x'}
+		<path d="M5 4.5 19 19.5M19 4.5 5 19.5" />
 	{:else if name === 'arrowUpRight'}
 		<path d="M7 17 17 7M8 7h9v9" />
 	{:else if name === 'arrowRight'}

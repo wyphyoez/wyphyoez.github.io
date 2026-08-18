@@ -57,3 +57,7 @@ Mobile dropdown final verification: The panel now uses explicit solid theme back
 Transparent/Header surface verification: At 360×844 in dark mode, the pre-scroll Header computed to a fully transparent background and the scrolled Header computed to the intended dark surface. Visual captures confirm that the Header has no enclosing surface at the top and gains its bordered glass treatment only after scrolling.
 
 Matched Header/dropdown surface verification: At the scrolled position with the menu open, the Header and dropdown both computed to `rgb(24, 24, 27)` in dark mode and `rgb(255, 255, 255)` in light mode. The paired captures confirm aligned boundaries and matching theme surfaces while retaining the required transparent top state.
+
+Social action and touch-focus review: The mobile dropdown now displays GitHub, LinkedIn, Instagram, and X as four icon actions that link to the verified `wyphyoez` profiles. Both dark and light captures show a balanced four-column social row. The scripted mobile action audit confirmed all four accessible profile destinations and no visible outline or box-shadow after the menu-control click.
+
+Social action final verification: Each of the four icon actions measures 48px in height at the 360px viewport, producing appropriately sized mobile touch targets. Dark and light menu captures preserve readable icon contrast and stable spacing; touch activation of the menu control reports no outline or box-shadow.

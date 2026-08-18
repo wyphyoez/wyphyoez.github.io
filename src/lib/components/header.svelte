@@ -28,6 +28,13 @@
 
 	$: menuDivider = isDarkMode ? 'border-white/10' : 'border-zinc-200/80';
 
+	$: menuSocials = [
+		{ label: 'GitHub', href: info.socialMedia.github, icon: 'github' },
+		{ label: 'LinkedIn', href: info.socialMedia.linkedin, icon: 'linkedin' },
+		{ label: 'Instagram', href: info.socialMedia.instagram, icon: 'instagram' },
+		{ label: 'X', href: info.socialMedia.x, icon: 'x' }
+	];
+
 	function handler() {
 		show = window.scrollY > 32;
 	}
@@ -174,14 +181,21 @@
 					{/each}
 				</ul>
 				<div class={`border-t px-1 pt-2 ${menuDivider}`}>
-					<a
-						href={info.socialMedia.github}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="flex min-h-12 items-center justify-center rounded-2xl bg-dark px-4 py-3 text-sm font-semibold text-white transition hover:bg-blue dark:bg-white dark:text-dark dark:hover:bg-blue dark:hover:text-white"
-					>
-						View GitHub profile
-					</a>
+					<div class="grid grid-cols-4 gap-2">
+						{#each menuSocials as social}
+							<a
+								href={social.href}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label={`Open ${social.label} profile`}
+								title={social.label}
+								class="inline-flex items-center justify-center rounded-2xl border border-zinc-200 bg-zinc-100 text-zinc-700 transition hover:border-blue hover:bg-blue hover:text-white [-webkit-tap-highlight-color:transparent] focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue dark:border-white/10 dark:bg-white/10 dark:text-white dark:hover:border-blue dark:hover:bg-blue"
+								style="min-height: 48px"
+							>
+								<Icon name={social.icon} className="h-5 w-5" />
+							</a>
+						{/each}
+					</div>
 				</div>
 			</div>
 		</div>

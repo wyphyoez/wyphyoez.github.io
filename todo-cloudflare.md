@@ -128,3 +128,11 @@
 - [x] Restore a transparent Header surface before scrolling in both light and dark modes.
 - [x] Match the scrolled Header and open mobile dropdown surface colors, borders, and depth.
 - [x] Validate top, scrolled, and open-menu states at phone width, then commit and redeploy.
+
+## Touch Focus and Social Menu Actions
+
+- [x] Remove unintended blue touch/click focus styling while preserving keyboard-visible focus.
+- [x] Replace the mobile dropdown GitHub CTA with accessible GitHub, LinkedIn, Instagram, and X icon actions.
+- [x] Validate light/dark mobile interactions, then commit and redeploy.
+
+> Verified social handles for the icon menu: LinkedIn, Instagram, and X use `wyphyoez`.

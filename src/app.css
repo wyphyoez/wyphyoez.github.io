@@ -162,6 +162,20 @@ li {
 	outline-offset: 3px;
 }
 
+@media (hover: none), (pointer: coarse) {
+	button,
+	a {
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	button:focus,
+	a:focus,
+	:focus-visible {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
 ::selection {
 	background: rgba(36, 138, 255, 0.22);
 }
