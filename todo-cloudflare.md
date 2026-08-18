@@ -104,3 +104,15 @@
 - [x] Make the logo use the same rounded Header boundary treatment as the theme and menu controls.
 - [x] Audit visible identity copy for Wai Yan Phyoe, @wyphyoez, and ask@wyphyoez.cyou.
 - [x] Validate the corrected mobile Header, then commit and redeploy the SvelteKit site.
+
+## Mobile Contact and Interaction Review
+
+- [x] Verify all mobile email actions use ask@wyphyoez.cyou and open a mailto flow.
+- [x] Exercise Header navigation, theme switching, mobile menu links, project actions, and article navigation at phone width.
+- [x] Record results and correct any broken mobile interaction.
+
+## Shared Header Boundary and Contact Label Refinement
+
+- [x] Give the mobile Header one shared outer boundary with balanced insets around the brand and control groups.
+- [x] Simplify visible contact CTAs to ask@wyphyoez.cyou without an Email prefix.
+- [x] Validate the resulting light/dark mobile Header, then commit and redeploy.
