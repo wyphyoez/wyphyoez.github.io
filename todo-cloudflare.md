@@ -83,6 +83,6 @@
 
 ## Light-Mode Header Contrast Fix
 
-- [ ] Inspect the transparent top-state Header colors against the light-mode background.
-- [ ] Ensure Header text, brand mark, theme icon, and menu icon remain visible before scrolling in light mode.
-- [ ] Validate mobile and desktop light/dark states, then commit and redeploy.
+- [x] Inspect the transparent top-state Header colors against the light-mode background.
+- [x] Ensure Header text, brand mark, theme icon, and menu icon remain visible before scrolling in light mode.
+- [x] Validate mobile and desktop light/dark states, then commit and redeploy.
