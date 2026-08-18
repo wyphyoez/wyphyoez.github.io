@@ -74,3 +74,15 @@
 - [x] Set the canonical and social metadata base URL to https://wyphyoez.cyou.
 - [x] Replace the About CTA text arrow with the shared SVG arrow icon.
 - [x] Commit the canonical/content cleanup and redeploy Cloudflare Pages.
+
+## Cross-Device Responsive Review
+
+- [x] Test Home, About, Articles, article detail, Projects, and Uses at mobile, tablet, and desktop viewport sizes.
+- [x] Inspect Header transparency/glass transition, menu controls, hero/footer wrapping, article reading width, and project-card actions across viewports.
+- [x] Record screenshots and device-specific findings in live-audit.md.
+
+## Light-Mode Header Contrast Fix
+
+- [ ] Inspect the transparent top-state Header colors against the light-mode background.
+- [ ] Ensure Header text, brand mark, theme icon, and menu icon remain visible before scrolling in light mode.
+- [ ] Validate mobile and desktop light/dark states, then commit and redeploy.

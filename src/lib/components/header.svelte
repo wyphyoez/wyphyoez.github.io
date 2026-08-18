@@ -33,7 +33,9 @@
 		class={`mx-auto flex h-14 max-w-5xl items-center rounded-full border px-3 transition duration-300 ${
 			show
 				? 'border-zinc-200/80 bg-white/80 text-zinc-700 shadow-lg shadow-zinc-900/5 backdrop-blur-xl dark:border-white/10 dark:bg-zinc-900/80 dark:text-zinc-100'
-				: 'border-transparent bg-transparent text-white shadow-none backdrop-blur-none'
+				: `border-transparent bg-transparent shadow-none backdrop-blur-none ${
+						isDarkMode ? 'text-white' : 'text-zinc-800'
+				  }`
 		}`}
 	>
 		<div class="flex min-w-0 flex-1 items-center gap-3">
@@ -59,7 +61,7 @@
 				</span>
 				<span
 					class={`font-outfit text-sm font-semibold tracking-tight ${
-						show ? 'text-zinc-800 dark:text-white' : 'text-white'
+						show ? 'text-zinc-800 dark:text-white' : isDarkMode ? 'text-white' : 'text-zinc-800'
 					}`}
 				>
 					{info.handle}
@@ -75,7 +77,9 @@
 						class={`rounded-full px-3 py-2 text-sm font-medium transition focus:outline-none focus:ring-2 focus:ring-blue ${
 							show
 								? 'text-zinc-600 hover:bg-zinc-100 hover:text-dark dark:text-zinc-300 dark:hover:bg-white/10 dark:hover:text-white'
-								: 'text-white/85 hover:bg-white/10 hover:text-white'
+								: isDarkMode
+								? 'text-white/85 hover:bg-white/10 hover:text-white'
+								: 'text-zinc-700 hover:bg-zinc-100 hover:text-dark'
 						}`}
 					>
 						{navLink.title}
@@ -92,7 +96,9 @@
 				class={`hidden rounded-full border px-4 py-2 text-sm font-semibold transition hover:border-blue hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue minmd:inline-flex ${
 					show
 						? 'border-zinc-200 text-zinc-700 dark:border-white/10 dark:text-zinc-100'
-						: 'border-white/40 text-white hover:border-white hover:text-white'
+						: isDarkMode
+						? 'border-white/40 text-white hover:border-white hover:text-white'
+						: 'border-zinc-300 text-zinc-700 hover:border-zinc-400 hover:text-dark'
 				}`}
 			>
 				GitHub
@@ -106,7 +112,9 @@
 				class={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue ${
 					show
 						? 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20'
-						: 'bg-white/10 text-white hover:bg-white/20'
+						: isDarkMode
+						? 'bg-white/10 text-white hover:bg-white/20'
+						: 'bg-zinc-900/10 text-zinc-700 hover:bg-zinc-900/15'
 				}`}
 			>
 				{#if isDarkMode}
@@ -124,7 +132,9 @@
 				class={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue minmd:hidden ${
 					show
 						? 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-white/10 dark:text-zinc-100 dark:hover:bg-white/20'
-						: 'bg-white/10 text-white hover:bg-white/20'
+						: isDarkMode
+						? 'bg-white/10 text-white hover:bg-white/20'
+						: 'bg-zinc-900/10 text-zinc-700 hover:bg-zinc-900/15'
 				}`}
 			>
 				{#if menu}
