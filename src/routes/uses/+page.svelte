@@ -29,22 +29,36 @@
 			deliberate.
 		</p>
 	</header>
-	<div
-		class="mt-16 divide-y divide-zinc-200/80 border-y border-zinc-200/80 dark:divide-white/10 dark:border-white/10"
-	>
+	<div class="mt-14 grid gap-4 minmd:grid-cols-2 minmd:gap-5">
 		{#each tools as tool, index}
-			<section class="grid gap-4 py-8 minmd:grid-cols-[6rem_1fr] minmd:gap-8">
-				<span class="font-mono text-sm text-zinc-400">0{index + 1}</span>
-				<div>
-					<h2 class="font-outfit text-2xl font-semibold text-dark dark:text-white">{tool.group}</h2>
-					<div class="mt-4 flex flex-wrap gap-2">
-						{#each tool.items as item}
-							<span
-								class="rounded-full bg-zinc-100 px-4 py-2 text-sm font-medium text-zinc-600 dark:bg-white/10 dark:text-zinc-300"
-								>{item}</span
-							>
-						{/each}
+			<section
+				class="group relative overflow-hidden rounded-[1.75rem] border border-zinc-200/80 bg-white p-6 shadow-lg shadow-zinc-900/[0.03] transition duration-300 hover:-translate-y-0.5 hover:border-blue/35 hover:shadow-xl hover:shadow-blue/[0.06] dark:border-white/10 dark:bg-white/[0.035] dark:shadow-none dark:hover:border-blue/50 dark:hover:bg-white/[0.055] minmd:p-7"
+			>
+				<div class="flex items-start justify-between gap-4">
+					<div>
+						<span class="font-mono text-xs font-medium tracking-[0.14em] text-blue"
+							>0{index + 1}</span
+						>
+						<h2
+							class="mt-3 font-outfit text-2xl font-semibold tracking-tight text-dark dark:text-white"
+						>
+							{tool.group}
+						</h2>
 					</div>
+					<span
+						class="rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-400 dark:border-white/10 dark:bg-white/5 dark:text-zinc-500"
+						>{tool.items.length} tools</span
+					>
+				</div>
+				<div
+					class="mt-6 flex flex-wrap gap-2.5 border-t border-zinc-200/80 pt-5 dark:border-white/10"
+				>
+					{#each tool.items as item}
+						<span
+							class="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-600 transition group-hover:border-zinc-300 dark:border-white/10 dark:bg-white/[0.06] dark:text-zinc-300 dark:group-hover:border-white/20"
+							><span class="h-1.5 w-1.5 rounded-full bg-blue" aria-hidden="true" />{item}</span
+						>
+					{/each}
 				</div>
 			</section>
 		{/each}

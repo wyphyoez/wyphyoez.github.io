@@ -47,7 +47,8 @@
 
 	onMount(() => {
 		const stored = localStorage.getItem('isDarkMode');
-		isDarkMode = stored === null ? true : stored === 'true';
+		const isSystemDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		isDarkMode = stored === null ? isSystemDarkMode : stored === 'true';
 		document.documentElement.classList.toggle('dark', isDarkMode);
 	});
 </script>

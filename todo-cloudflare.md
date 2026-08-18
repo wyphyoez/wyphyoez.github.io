@@ -136,3 +136,16 @@
 - [x] Validate light/dark mobile interactions, then commit and redeploy.
 
 > Verified social handles for the icon menu: LinkedIn, Instagram, and X use `wyphyoez`.
+
+## Footer and Cross-Section Responsive Review
+
+- [x] Test Footer, Hero, projects, article layouts, About, Uses, and CTA sections at phone, tablet, and desktop widths.
+- [x] Check section stacking, typography wrapping, touch links, grid transitions, and horizontal overflow.
+- [x] Record findings and correct any responsive regression found.
+
+## Projects and Uses Visual Refinement
+
+- [x] Improve project-card surfaces, image framing, metadata hierarchy, and hover/tap states.
+- [x] Improve Uses tool-pill hierarchy, grouping, spacing, and responsive wrapping.
+- [x] Validate the updated sections in light/dark mobile and desktop states, then commit and redeploy.
+- [x] Align the Header’s fallback theme initialization with the document’s system-theme preference so persisted light mode remains light after reload.
