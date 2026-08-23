@@ -75,6 +75,12 @@
 		<p class="mt-3 max-w-[34rem] text-sm leading-7 text-zinc-600 dark:text-zinc-400">
 			{description}
 		</p>
+		<a
+			href={`/projects/${projectDetail.slug}`}
+			class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-dark transition hover:gap-3 hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue dark:text-white"
+		>
+			Read case study <Icon name="arrowRight" className="h-4 w-4" />
+		</a>
 		<div class="mt-6 flex flex-wrap gap-2 border-t border-zinc-200/80 pt-5 dark:border-white/10">
 			{#each stack as item}
 				<span

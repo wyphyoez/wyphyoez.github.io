@@ -1,6 +1,9 @@
 ---
 title: What belongs in a project card?
 date: 2026-08-10
+tags:
+  - Project storytelling
+  - Frontend
 ---
 
 A project card should answer three questions quickly: what is this, why might it matter, and where can I inspect it?

@@ -76,16 +76,16 @@
 
 			<div class="mt-8 flex flex-col items-stretch gap-3 minmd:flex-row minmd:items-center">
 				<a
-					href="/#about"
+					href="/projects"
 					class="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-white px-6 py-3 text-sm font-semibold text-dark shadow-lg shadow-black/20 transition hover:-translate-y-0.5 hover:bg-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-[#101114]"
 				>
-					Explore the work <span aria-hidden="true">↓</span>
+					View selected work <span aria-hidden="true">↗</span>
 				</a>
 				<a
 					href="mailto:ask@wyphyoez.cyou"
 					class="inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-white/70 px-6 py-3 text-sm font-semibold text-white transition hover:border-blue hover:bg-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-[#101114]"
 				>
-					ask@wyphyoez.cyou <span aria-hidden="true">↗</span>
+					Let’s talk <span aria-hidden="true">↗</span>
 				</a>
 			</div>
 		</div>

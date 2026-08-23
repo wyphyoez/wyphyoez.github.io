@@ -161,3 +161,13 @@
 - [x] Update the checklist after the TinyLife image correction is deployed and live-verified.
 
 <!-- TinyLife image bug tracking: the two items above were added after the user reported that the project image was not visible. -->
+
+## Ordered Portfolio Improvement Program
+
+- [x] Build project case-study detail pages with context, problem, approach, implementation, outcome, and next-step sections.
+- [x] Add homepage proof hierarchy with a clearer role/value hero, selected-work CTA, collaboration CTA, and proof strip.
+- [x] Upgrade the Articles archive with reading time, topic tags, excerpts, and improved reading navigation.
+- [x] Resolve the local Articles archive 500 error and verify the archive route before continuing its visual refinement.
+- [x] Add an About-page collaboration-fit section covering services, working style, and ideal project types.
+- [x] Run performance, accessibility, theme, image-loading, and responsive verification across the updated routes.
+- [ ] Commit and deploy the complete ordered improvement program to GitHub and Cloudflare Pages.

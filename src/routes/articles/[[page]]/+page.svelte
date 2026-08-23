@@ -39,6 +39,12 @@
 			<p class="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-300">
 				Practical notes, short experiments, and lessons gathered while building for the web.
 			</p>
+			<div
+				class="mt-5 flex items-center gap-2 border-t border-zinc-200 pt-4 text-xs font-semibold uppercase tracking-[0.16em] text-zinc-400 dark:border-white/10"
+			>
+				<span class="h-1.5 w-1.5 rounded-full bg-blue" aria-hidden="true" />
+				<span>{data.articles.length} notes on this page</span>
+			</div>
 		</div>
 	</header>
 

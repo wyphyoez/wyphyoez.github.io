@@ -54,6 +54,58 @@
 		</div>
 	</div>
 
+	<section
+		class="mt-20 grid gap-10 border-t border-zinc-200/80 pt-10 min-lg:grid-cols-[0.72fr_1.28fr] min-lg:gap-16 dark:border-white/10"
+	>
+		<div>
+			<p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue">Collaboration fit</p>
+			<h2 class="mt-4 font-outfit text-4xl font-semibold tracking-tight text-dark dark:text-white">
+				Clear scope, steady progress.
+			</h2>
+			<p class="mt-5 max-w-md text-base leading-8 text-zinc-600 dark:text-zinc-400">
+				I work best with people who value a focused problem, thoughtful feedback, and a useful
+				outcome over unnecessary ceremony.
+			</p>
+		</div>
+		<div class="grid gap-4 minmd:grid-cols-3">
+			<div
+				class="rounded-2xl border border-zinc-200/80 bg-zinc-50/70 p-5 dark:border-white/10 dark:bg-white/[0.035]"
+			>
+				<p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-400">Can help with</p>
+				<p class="mt-3 font-outfit text-xl font-semibold text-dark dark:text-white">
+					Product interfaces
+				</p>
+				<p class="mt-3 text-sm leading-6 text-zinc-500 dark:text-zinc-400">
+					Responsive frontend builds, interface refinement, and practical component systems.
+				</p>
+			</div>
+			<div
+				class="rounded-2xl border border-zinc-200/80 bg-zinc-50/70 p-5 dark:border-white/10 dark:bg-white/[0.035]"
+			>
+				<p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-400">Working style</p>
+				<p class="mt-3 font-outfit text-xl font-semibold text-dark dark:text-white">
+					Thoughtful iteration
+				</p>
+				<p class="mt-3 text-sm leading-6 text-zinc-500 dark:text-zinc-400">
+					Small, testable steps with direct communication and attention to the details that affect
+					real use.
+				</p>
+			</div>
+			<div
+				class="rounded-2xl border border-zinc-200/80 bg-zinc-50/70 p-5 dark:border-white/10 dark:bg-white/[0.035]"
+			>
+				<p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-400">Good fit</p>
+				<p class="mt-3 font-outfit text-xl font-semibold text-dark dark:text-white">
+					Useful product work
+				</p>
+				<p class="mt-3 text-sm leading-6 text-zinc-500 dark:text-zinc-400">
+					Teams improving a live interface, building a focused new experience, or bringing clarity
+					to a complex flow.
+				</p>
+			</div>
+		</div>
+	</section>
+
 	<div class="mt-20 border-t border-zinc-200/80 pt-10 dark:border-white/10">
 		<div class="flex flex-col gap-5 minmd:flex-row minmd:items-center minmd:justify-between">
 			<div>

@@ -86,4 +86,10 @@ TinyLife production verification: Cloudflare Pages deployment `03648701` complet
 
 TinyLife image-fix verification: The original `/manus-storage` reference returned 404 on Cloudflare Pages. The generated privacy-safe cover was uploaded to a verified public CDN URL, the Projects data was updated, and deployment `94b49235` for commit `334740d` completed successfully. The live asset returns HTTP 200 as a 4.6 MB PNG, and `https://wyphyoez.cyou/projects` visibly renders the TinyLife cover with the card title and technology tags intact.
 
+Ordered redesign mobile review: At 360 px, the refreshed homepage preserves a clear editorial hero, visible primary CTA, readable metadata, and a contained mobile header. The About route retains its card and footer rhythm without horizontal overflow. Automated layout metrics show no horizontal overflow for the updated home, Articles, About, and TinyLife case-study routes at this width.
+
+Ordered redesign desktop review: At 1440 px, the TinyLife case study maintains a balanced two-column introduction, concise role/year metadata, and a large, contained cover image. The Articles archive keeps an editorial hierarchy with readable excerpts, date and reading-time metadata, and quiet topic tags. Automated layout metrics show no horizontal overflow across the same updated routes at desktop width.
+
+About collaboration review: The desktop About page places the collaboration-fit section directly after the personal working principles. Its three cards are aligned, text remains legible, and the availability CTA stays clear before the footer. The section also stacks within the mobile layout without recorded horizontal overflow.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->

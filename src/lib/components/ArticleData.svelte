@@ -30,4 +30,16 @@
 		<Icon name="clock" className="h-3.5 w-3.5 text-blue" />
 		<span>{post.readingTime}</span>
 	</span>
+	{#if post.tags?.length}
+		<span
+			class="hidden h-3 w-px bg-zinc-200 dark:bg-white/10 minmd:inline-block"
+			aria-hidden="true"
+		/>
+		{#each post.tags as tag}
+			<span
+				class="rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-[0.68rem] font-semibold text-zinc-500 dark:border-white/10 dark:bg-white/5 dark:text-zinc-400"
+				>{tag}</span
+			>
+		{/each}
+	{/if}
 </div>

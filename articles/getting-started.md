@@ -1,6 +1,9 @@
 ---
 title: Making a small site feel finished
 date: 2026-08-17
+tags:
+  - Portfolio
+  - Frontend
 ---
 
 A personal website does not need a dozen pages to feel complete. It needs a clear first sentence, a useful way to explore the work, and enough evidence that the person behind it notices details.

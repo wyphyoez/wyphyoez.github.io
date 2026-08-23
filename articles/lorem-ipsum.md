@@ -1,6 +1,9 @@
 ---
 title: A note on keeping interfaces honest
 date: 2026-08-03
+tags:
+  - Interface design
+  - Product thinking
 ---
 
 Good interface design is often less about adding something and more about removing uncertainty.

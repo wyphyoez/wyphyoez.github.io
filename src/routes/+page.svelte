@@ -16,6 +16,37 @@
 />
 
 <section
+	class="grid gap-4 border-b border-zinc-200/80 py-8 minmd:grid-cols-3 minmd:gap-6 minmd:py-10 dark:border-white/10"
+	aria-label="Portfolio proof points"
+>
+	<div class="flex items-start gap-4">
+		<span class="font-mono text-sm text-blue">01</span>
+		<div>
+			<p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-400">Selected builds</p>
+			<p class="mt-2 font-outfit text-xl font-semibold text-dark dark:text-white">
+				{info.projects.length} projects
+			</p>
+		</div>
+	</div>
+	<div class="flex items-start gap-4">
+		<span class="font-mono text-sm text-blue">02</span>
+		<div>
+			<p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-400">Working across</p>
+			<p class="mt-2 font-outfit text-xl font-semibold text-dark dark:text-white">
+				Interfaces + APIs
+			</p>
+		</div>
+	</div>
+	<div class="flex items-start gap-4">
+		<span class="font-mono text-sm text-blue">03</span>
+		<div>
+			<p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-400">Current status</p>
+			<p class="mt-2 font-outfit text-xl font-semibold text-dark dark:text-white">Open to work</p>
+		</div>
+	</div>
+</section>
+
+<section
 	id="about"
 	class="grid gap-10 border-t border-zinc-200/80 py-20 minmd:py-28 min-lg:grid-cols-[0.7fr_1.3fr] dark:border-white/10"
 >
