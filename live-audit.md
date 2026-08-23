@@ -118,4 +118,6 @@ Mobile navigation validation, local production preview: At 360px, the expanded m
 
 Contact form behavior, local production preview: A complete representative brief (name, valid email, project type, budget, timeline, and message) passes native browser validity checks. The validation deliberately stopped before submission, so no email client opened and no email was sent; the route implementation serializes the completed brief into a prefilled `mailto:ask@wyphyoez.cyou` URL only, with no website storage or API endpoint.
 
+Contact/Now production verification: GitHub commit `e998d31` triggered Cloudflare Pages deployment `3182c066`, whose queued, initialization, clone, build, and deploy stages all completed successfully. The custom-domain routes `https://wyphyoez.cyou/contact` and `https://wyphyoez.cyou/now` both render the expected live content. Contact exposes its six-field brief form, direct email fallback, and explicit non-storage note; Now exposes its 2026-08-23 date, three focus cards, availability copy, and Contact CTA.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->
