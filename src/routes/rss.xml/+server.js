@@ -7,9 +7,8 @@ import { info } from '$lib/utils/info';
 
 export const prerender = true;
 
-// update this to something more appropriate for your website
-const websiteDescription = `${info.name}'s blog`;
-const articlesUrl = `${info.baseUrl}/articles`;
+const websiteDescription = 'Practical notes on interfaces, tools, and building for the web.';
+const articlesUrl = `${info.baseUrl}/article`;
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}

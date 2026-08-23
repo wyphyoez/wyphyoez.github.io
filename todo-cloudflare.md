@@ -171,3 +171,9 @@
 - [x] Add an About-page collaboration-fit section covering services, working style, and ideal project types.
 - [x] Run performance, accessibility, theme, image-loading, and responsive verification across the updated routes.
 - [x] Commit and deploy the complete ordered improvement program to GitHub and Cloudflare Pages.
+
+## SEO and Social Metadata Audit
+
+- [x] Audit production title, description, canonical URL, Open Graph, Twitter card, sitemap, and robots coverage across key routes.
+- [x] Review the shared metadata implementation and identify missing page-level, social-image, and structured-data coverage.
+- [ ] Apply, validate, and deploy the prioritized SEO and Open Graph improvements.

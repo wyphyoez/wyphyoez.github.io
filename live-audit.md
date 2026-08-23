@@ -94,4 +94,16 @@ About collaboration review: The desktop About page places the collaboration-fit 
 
 Ordered redesign production review: Cloudflare Pages deployment `11ae8f7d` completed successfully for commit `20fb993` and is aliased to `https://wyphyoez.cyou`. The live TinyLife case-study route displays its cover, project metadata, and narrative sections, while the live Articles route displays its count, excerpts, reading-time metadata, and topic tags.
 
+SEO audit—homepage baseline: The live homepage provides a canonical URL, title, description, Open Graph title/description/type/URL, Twitter summary title/description, author, and theme-color metadata. It does not currently expose `og:image`, `twitter:image`, explicit robots metadata, or JSON-LD structured data.
+
+SEO audit—Articles baseline: The live Articles archive has a page-specific title and description, but no canonical URL, Open Graph tags, Twitter tags, robots directive, or JSON-LD structured data. This is the highest-priority metadata consistency gap found during the production review.
+
+SEO audit—case-study baseline: The TinyLife route has a page-specific title, description, canonical URL, Open Graph title/description/type/URL, and Twitter summary title/description. Like the homepage, it lacks an Open Graph image, Twitter image, explicit robots metadata, and JSON-LD structured data.
+
+SEO implementation—local homepage: The rebuilt homepage now renders an `index, follow` robots directive, shared Open Graph and Twitter images, a `summary_large_image` Twitter card, and valid Person JSON-LD containing the portfolio URL, title, description, and verified social profiles.
+
+SEO implementation—local article: Article detail routes now render the correct singular `/article/{slug}` canonical URL, `og:type=article`, published-time metadata, a large social-preview image, an `index, follow` directive, and BlogPosting JSON-LD with author, dates, headline, description, image, and main entity URL.
+
+SEO implementation—local case study: The TinyLife detail route now renders its own cover as the Open Graph and Twitter image, retains an `index, follow` directive and canonical URL, and emits CreativeWork JSON-LD containing the project description, role context, creation year, technology keywords, creator, and canonical URL.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->

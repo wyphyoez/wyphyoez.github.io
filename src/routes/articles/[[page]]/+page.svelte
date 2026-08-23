@@ -1,6 +1,7 @@
 <script>
 	import { info } from '$lib/utils/info.js';
 	import ArticleData from '$lib/components/ArticleData.svelte';
+	import Head from '$lib/components/head.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 
 	/** @type {import('./$types').PageData} */
@@ -9,10 +10,11 @@
 	$: hasNextPage = Boolean(data.articles[data.articles.length - 1]?.previous);
 </script>
 
-<svelte:head>
-	<title>{info.name} {info.handle} | Articles</title>
-	<meta name="description" content={`Notes on building software by ${info.name}.`} />
-</svelte:head>
+<Head
+	name={`${info.name} ${info.handle} | Articles`}
+	description={`Notes on building software by ${info.name}.`}
+	path={data.page === 1 ? '/articles' : `/articles/${data.page}`}
+/>
 
 <section class="mx-auto max-w-5xl py-8 minmd:py-12">
 	<header

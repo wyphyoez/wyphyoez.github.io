@@ -7,8 +7,14 @@ import { info } from '$lib/utils/info.js';
 
 export const prerender = true;
 
-// make sure this matches your post route
-const getPostUrl = (slug) => `${info.baseUrl}/articles/${slug}`;
+const getPostUrl = (slug) => `${info.baseUrl}/article/${slug}`;
+const staticRoutes = [
+	{ path: '/', priority: '1.0' },
+	{ path: '/about', priority: '0.8' },
+	{ path: '/projects', priority: '0.9' },
+	{ path: '/articles', priority: '0.8' },
+	{ path: '/uses', priority: '0.6' }
+];
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}
@@ -31,10 +37,23 @@ export async function GET({ setHeaders }) {
       xmlns:pagemap="http://www.google.com/schemas/sitemap-pagemap/1.0"
       xmlns:xhtml="http://www.w3.org/1999/xhtml"
     >
-      <url>
-        <loc>${info.baseUrl}</loc>
-        <priority>1.0</priority>
-      </url>
+	      ${staticRoutes
+					.map(
+						(route) => `<url>
+	        <loc>${info.baseUrl}${route.path === '/' ? '' : route.path}</loc>
+	        <priority>${route.priority}</priority>
+	      </url>`
+					)
+					.join('')}
+
+	      ${info.projects
+					.map(
+						(project) => `<url>
+	        <loc>${info.baseUrl}/projects/${project.slug}</loc>
+	        <priority>0.8</priority>
+	      </url>`
+					)
+					.join('')}
 
       ${articles
 				.map(

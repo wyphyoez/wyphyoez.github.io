@@ -2,6 +2,8 @@ import hoobank from '$lib/images/hoobank.png';
 
 export const info = {
 	baseUrl: 'https://wyphyoez.cyou',
+	socialImage:
+		'https://files.manuscdn.com/user_upload_by_module/session_file/310519663886508705/oncODtkEAdJjTaEQ.png',
 	name: 'Wai Yan Phyoe',
 	handle: '@wyphyoez',
 	jobDescription: 'Full-Stack Web Developer',

@@ -1,16 +1,33 @@
 <script>
 	import Head from '$lib/components/head.svelte';
 	import Icon from '$lib/components/Icon.svelte';
+	import { info } from '$lib/utils/info.js';
 
 	export let data;
 	$: project = data.project;
 	$: study = project.caseStudy;
+	$: projectUrl = `${info.baseUrl}/projects/${project.slug}`;
+	$: projectJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'CreativeWork',
+		name: project.title,
+		description: project.description,
+		url: projectUrl,
+		image: project.thumbnail.startsWith('http')
+			? project.thumbnail
+			: `${info.baseUrl}${project.thumbnail}`,
+		dateCreated: `${project.year}-01-01`,
+		creator: { '@type': 'Person', name: info.name, url: info.baseUrl },
+		keywords: project.stack.join(', ')
+	};
 </script>
 
 <Head
 	name={`${project.title} | ${project.label}`}
 	description={project.description}
 	path={`/projects/${project.slug}`}
+	image={project.thumbnail}
+	structuredData={projectJsonLd}
 />
 
 <article class="mx-auto max-w-5xl pb-24 pt-16 minmd:pb-32 minmd:pt-24">

@@ -1,17 +1,16 @@
 <script>
 	import Icon from '$lib/components/Icon.svelte';
+	import Head from '$lib/components/head.svelte';
 	import { info } from '$lib/utils/info';
 </script>
 
-<svelte:head>
-	<title>{info.name} {info.handle} | About</title>
-	<meta
-		name="description"
-		content={`About ${info.name}, a ${info.jobDescription.toLowerCase()} based in ${
-			info.location
-		}.`}
-	/>
-</svelte:head>
+<Head
+	name={`${info.name} ${info.handle} | About`}
+	description={`About ${info.name}, a ${info.jobDescription.toLowerCase()} based in ${
+		info.location
+	}.`}
+	path="/about"
+/>
 
 <section class="mx-auto max-w-5xl py-20 minmd:py-28">
 	<div class="max-w-3xl">

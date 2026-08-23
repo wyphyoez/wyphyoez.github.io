@@ -1,6 +1,7 @@
 <script>
 	import { info } from '$lib/utils/info.js';
 	import ArticleData from '$lib/components/ArticleData.svelte';
+	import Head from '$lib/components/head.svelte';
 	import Icon from '$lib/components/Icon.svelte';
 
 	/** @type {import('./$types').PageData} */
@@ -9,25 +10,31 @@
 	const ogImage = `https://og-image.vercel.app/**${encodeURIComponent(
 		data.article.title
 	)}**?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fhyper-color-logo.svg`;
-	const url = `${info.baseUrl}/article/${data.article.slug}`;
+	$: articlePath = `/article/${data.article.slug}`;
+	$: articleUrl = `${info.baseUrl}${articlePath}`;
+	$: articleJsonLd = {
+		'@context': 'https://schema.org',
+		'@type': 'BlogPosting',
+		headline: data.article.title,
+		description: data.article.preview.text,
+		image: ogImage,
+		datePublished: new Date(data.article.date).toISOString(),
+		dateModified: new Date(data.article.updated || data.article.date).toISOString(),
+		mainEntityOfPage: articleUrl,
+		author: { '@type': 'Person', name: info.name, url: info.baseUrl },
+		publisher: { '@type': 'Person', name: info.name }
+	};
 </script>
 
-<svelte:head>
-	<title>{data.article.title} - {info.name}</title>
-	<meta name="description" content={data.article.preview.text} />
-	<meta name="author" content={info.name} />
-	<meta property="og:url" content={url} />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={data.article.title} />
-	<meta property="og:description" content={data.article.preview.text} />
-	<meta property="og:image" content={ogImage} />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="twitter:domain" content={info.baseUrl} />
-	<meta property="twitter:url" content={url} />
-	<meta name="twitter:title" content={data.article.title} />
-	<meta name="twitter:description" content={data.article.preview.text} />
-	<meta name="twitter:image" content={ogImage} />
-</svelte:head>
+<Head
+	name={`${data.article.title} | ${info.name}`}
+	description={data.article.preview.text}
+	path={articlePath}
+	image={ogImage}
+	type="article"
+	publishedTime={new Date(data.article.date).toISOString()}
+	structuredData={articleJsonLd}
+/>
 
 <article class="mx-auto max-w-4xl py-8 minmd:py-12">
 	<a
