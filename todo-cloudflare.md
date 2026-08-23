@@ -149,3 +149,9 @@
 - [x] Improve Uses tool-pill hierarchy, grouping, spacing, and responsive wrapping.
 - [x] Validate the updated sections in light/dark mobile and desktop states, then commit and redeploy.
 - [x] Align the Header’s fallback theme initialization with the document’s system-theme preference so persisted light mode remains light after reload.
+
+## TinyLife Portfolio Addition
+
+- [x] Review the referenced TinyLife project for verified copy, stack, and public links.
+- [x] Add TinyLife to the Projects data with an appropriate image and accessible actions.
+- [ ] Validate, commit, deploy, and verify the new project card on the live site.

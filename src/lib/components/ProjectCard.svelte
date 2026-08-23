@@ -26,26 +26,32 @@
 				class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/45 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-md"
 				>{label}</span
 			>
-			<div class="flex items-center gap-2">
-				<a
-					href={githubUrl}
-					class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-blue focus:outline-none focus:ring-2 focus:ring-white"
-					aria-label={`View ${title} source code on GitHub`}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Icon name="github" className="h-4 w-4" />
-				</a>
-				<a
-					href={liveUrl}
-					class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-blue focus:outline-none focus:ring-2 focus:ring-white"
-					aria-label={`Open ${title} live preview`}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Icon name="arrowUpRight" className="h-4 w-4" />
-				</a>
-			</div>
+			{#if githubUrl || liveUrl}
+				<div class="flex items-center gap-2">
+					{#if githubUrl}
+						<a
+							href={githubUrl}
+							class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-blue focus:outline-none focus:ring-2 focus:ring-white"
+							aria-label={`View ${title} source code on GitHub`}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Icon name="github" className="h-4 w-4" />
+						</a>
+					{/if}
+					{#if liveUrl}
+						<a
+							href={liveUrl}
+							class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:border-white/40 hover:bg-blue focus:outline-none focus:ring-2 focus:ring-white"
+							aria-label={`Open ${title} live preview`}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Icon name="arrowUpRight" className="h-4 w-4" />
+						</a>
+					{/if}
+				</div>
+			{/if}
 		</div>
 		<div
 			class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs font-medium text-white/80 minmd:bottom-5 minmd:left-5 minmd:right-5"
