@@ -176,4 +176,4 @@
 
 - [x] Audit production title, description, canonical URL, Open Graph, Twitter card, sitemap, and robots coverage across key routes.
 - [x] Review the shared metadata implementation and identify missing page-level, social-image, and structured-data coverage.
-- [ ] Apply, validate, and deploy the prioritized SEO and Open Graph improvements.
+- [x] Apply, validate, and deploy the prioritized SEO and Open Graph improvements.

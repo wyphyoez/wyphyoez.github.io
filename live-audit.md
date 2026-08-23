@@ -106,4 +106,6 @@ SEO implementation—local article: Article detail routes now render the correct
 
 SEO implementation—local case study: The TinyLife detail route now renders its own cover as the Open Graph and Twitter image, retains an `index, follow` directive and canonical URL, and emits CreativeWork JSON-LD containing the project description, role context, creation year, technology keywords, creator, and canonical URL.
 
+SEO implementation—production homepage: Cloudflare Pages deployment `7b843e29` successfully published commit `cab4a8a`. The live homepage now exposes its canonical URL, `index, follow` robots directive, `summary_large_image` Twitter card, public social-preview image, and Person JSON-LD.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->
