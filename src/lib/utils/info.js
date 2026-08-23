@@ -85,7 +85,7 @@ export const info = {
 				'A privacy-first mobile memory space for capturing photos, short videos, voice notes, and reflections, then returning to them through a calm personal timeline.',
 			stack: ['React Native', 'Expo', 'Supabase'],
 			isFeatured: true,
-			thumbnail: '/manus-storage/tinylife-portfolio-cover_796bba4a.png'
+			thumbnail: '/manus-storage/tinylife-portfolio-cover_7e2795a2.png'
 		},
 		{
 			title: 'HooBank',

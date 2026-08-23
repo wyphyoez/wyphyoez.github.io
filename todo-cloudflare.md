@@ -155,3 +155,9 @@
 - [x] Review the referenced TinyLife project for verified copy, stack, and public links.
 - [x] Add TinyLife to the Projects data with an appropriate image and accessible actions.
 - [x] Validate, commit, deploy, and verify the new project card on the live site.
+
+- [ ] Fix the missing TinyLife project image in the deployed Projects card and verify the replacement asset loads locally and on wyphyoez.cyou.
+
+- [ ] Update the checklist after the TinyLife image correction is deployed and live-verified.
+
+<!-- TinyLife image bug tracking: the two items above were added after the user reported that the project image was not visible. -->
