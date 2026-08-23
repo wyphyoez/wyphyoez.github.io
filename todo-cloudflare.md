@@ -154,4 +154,4 @@
 
 - [x] Review the referenced TinyLife project for verified copy, stack, and public links.
 - [x] Add TinyLife to the Projects data with an appropriate image and accessible actions.
-- [ ] Validate, commit, deploy, and verify the new project card on the live site.
+- [x] Validate, commit, deploy, and verify the new project card on the live site.
