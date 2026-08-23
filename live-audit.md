@@ -92,4 +92,6 @@ Ordered redesign desktop review: At 1440 px, the TinyLife case study maintains a
 
 About collaboration review: The desktop About page places the collaboration-fit section directly after the personal working principles. Its three cards are aligned, text remains legible, and the availability CTA stays clear before the footer. The section also stacks within the mobile layout without recorded horizontal overflow.
 
+Ordered redesign production review: Cloudflare Pages deployment `11ae8f7d` completed successfully for commit `20fb993` and is aliased to `https://wyphyoez.cyou`. The live TinyLife case-study route displays its cover, project metadata, and narrative sections, while the live Articles route displays its count, excerpts, reading-time metadata, and topic tags.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->

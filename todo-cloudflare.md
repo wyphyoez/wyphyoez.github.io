@@ -170,4 +170,4 @@
 - [x] Resolve the local Articles archive 500 error and verify the archive route before continuing its visual refinement.
 - [x] Add an About-page collaboration-fit section covering services, working style, and ideal project types.
 - [x] Run performance, accessibility, theme, image-loading, and responsive verification across the updated routes.
-- [ ] Commit and deploy the complete ordered improvement program to GitHub and Cloudflare Pages.
+- [x] Commit and deploy the complete ordered improvement program to GitHub and Cloudflare Pages.
