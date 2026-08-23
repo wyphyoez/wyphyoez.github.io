@@ -82,7 +82,7 @@
 					View selected work <span aria-hidden="true">↗</span>
 				</a>
 				<a
-					href="mailto:ask@wyphyoez.cyou"
+					href="/contact"
 					class="inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-white/70 px-6 py-3 text-sm font-semibold text-white transition hover:border-blue hover:bg-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-[#101114]"
 				>
 					Let’s talk <span aria-hidden="true">↗</span>

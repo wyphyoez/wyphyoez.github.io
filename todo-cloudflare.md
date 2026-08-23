@@ -177,3 +177,12 @@
 - [x] Audit production title, description, canonical URL, Open Graph, Twitter card, sitemap, and robots coverage across key routes.
 - [x] Review the shared metadata implementation and identify missing page-level, social-image, and structured-data coverage.
 - [x] Apply, validate, and deploy the prioritized SEO and Open Graph improvements.
+
+## Contact Brief and Now Page
+
+- [x] Review the existing contact patterns and navigation before adding the requested pages.
+- [x] Build an accessible Contact brief page with service, budget, timeline, and message fields that prepare a prefilled email inquiry.
+- [x] Build a Now page with current focus, current project, learning, availability, and a transparent last-updated date.
+- [x] Add Contact and Now page entries to the portfolio navigation and internal CTAs.
+- [x] Validate mobile/desktop layouts, client-side form behavior, build, and route status for both pages.
+- [ ] Commit, deploy, and verify the Contact brief and Now pages on the live custom domain.

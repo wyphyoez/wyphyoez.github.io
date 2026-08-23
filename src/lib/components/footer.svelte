@@ -24,10 +24,10 @@
 					collaboration and practical conversations.
 				</p>
 				<a
-					href={`mailto:${info.socialMedia.email}`}
+					href="/contact"
 					class="mt-7 inline-flex min-h-12 max-w-full items-center gap-3 rounded-full bg-white px-5 py-3 text-sm font-semibold text-dark transition hover:-translate-y-0.5 hover:bg-blue hover:text-white focus:outline-none focus:ring-2 focus:ring-blue focus:ring-offset-2 focus:ring-offset-[#101114]"
 				>
-					{info.socialMedia.email}<span aria-hidden="true">↗</span>
+					Start a brief<span aria-hidden="true">↗</span>
 				</a>
 			</div>
 
@@ -60,6 +60,13 @@
 								>Projects</a
 							>
 						</li>
+						<li>
+							<a
+								href="/contact"
+								class="transition hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue"
+								>Contact</a
+							>
+						</li>
 					</ul>
 				</nav>
 				<nav aria-label="Reading links">
@@ -81,6 +88,13 @@
 						</li>
 						<li>
 							<a
+								href="/now"
+								class="transition hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue"
+								>Now</a
+							>
+						</li>
+						<li>
+							<a
 								href={info.socialMedia.github}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -93,7 +107,11 @@
 				<div
 					class="col-span-2 border-t border-white/10 pt-5 minmd:col-span-1 minmd:border-t-0 minmd:pt-0"
 				>
-					<p class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-zinc-500">Now</p>
+					<a
+						href="/now"
+						class="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-zinc-500 transition hover:text-blue focus:outline-none focus:ring-2 focus:ring-blue"
+						>Now</a
+					>
 					<p class="mt-4 text-sm leading-6 text-zinc-300">{info.location}</p>
 					<p class="mt-1 text-sm leading-6 text-emerald-300">{info.availability}</p>
 				</div>

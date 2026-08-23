@@ -9,6 +9,24 @@ export const info = {
 	jobDescription: 'Full-Stack Web Developer',
 	location: 'Meiktila, Myanmar',
 	availability: 'Open to thoughtful product work',
+	now: {
+		updated: '2026-08-23',
+		headline: 'Building with intention.',
+		intro:
+			'I’m refining the foundations of this portfolio: clearer project stories, easier conversations, and a more useful path from first visit to a real brief.',
+		building: {
+			title: 'A clearer portfolio system',
+			text: 'Improving case studies, contact flow, and project context so the work is easier to understand.'
+		},
+		focus: {
+			title: 'Useful front-end details',
+			text: 'Paying attention to responsive behavior, accessible interactions, and the small decisions that make a product feel considered.'
+		},
+		learning: {
+			title: 'Discoverability and writing',
+			text: 'Practising clearer technical writing and strengthening the metadata that helps good work reach the right people.'
+		}
+	},
 	about:
 		'I build responsive web experiences and practical interfaces with a focus on clarity, maintainability, and the small details that make software feel considered. My work spans front-end systems, API integration, and the steady craft of learning in public.',
 	navLinks: [
@@ -16,7 +34,9 @@ export const info = {
 		{ path: '/about', title: 'About' },
 		{ path: '/articles', title: 'Articles' },
 		{ path: '/projects', title: 'Projects' },
-		{ path: '/uses', title: 'Uses' }
+		{ path: '/uses', title: 'Uses' },
+		{ path: '/now', title: 'Now' },
+		{ path: '/contact', title: 'Contact' }
 	],
 	experience: [
 		{

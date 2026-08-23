@@ -108,4 +108,14 @@ SEO implementation—local case study: The TinyLife detail route now renders its
 
 SEO implementation—production homepage: Cloudflare Pages deployment `7b843e29` successfully published commit `cab4a8a`. The live homepage now exposes its canonical URL, `index, follow` robots directive, `summary_large_image` Twitter card, public social-preview image, and Person JSON-LD.
 
+Contact brief local review: The new Contact route presents a direct email fallback, six required brief fields, readable select controls, and a clear explanation that submission prepares a mailto email rather than storing data. Native browser validity reports the blank form as invalid, while the route content remains fully usable without JavaScript for the direct-email fallback.
+
+Now page local review: The Now route presents a clear current-focus heading, three focused update cards, a semantic last-updated `time` value of `2026-08-23`, availability context, and several internal Contact paths. Header and footer navigation include both Now and Contact.
+
+Responsive capture, local production preview: Contact and Now were reviewed at 360px and 1440px in light mode. Both routes retain readable single-column mobile headings/cards and their desktop two-column editorial composition; the audit recorded no horizontal overflow at either viewport (`bodyScrollWidth` and `documentScrollWidth` match the client width). The 360px Contact screen retains equal circular theme/menu controls and clear introductory guidance, while the 360px Now screen keeps the date, copy, and first focus card legible.
+
+Mobile navigation validation, local production preview: At 360px, the expanded menu on both Contact and Now reports `aria-expanded="true"`, stays within 16–344px of the 360px viewport, and introduces no horizontal overflow. It lists all seven internal destinations—including Now and Contact—and retains four social action controls. The captured light-state menu has matching rounded Header/menu surfaces, readable labels, and contained social controls.
+
+Contact form behavior, local production preview: A complete representative brief (name, valid email, project type, budget, timeline, and message) passes native browser validity checks. The validation deliberately stopped before submission, so no email client opened and no email was sent; the route implementation serializes the completed brief into a prefilled `mailto:ask@wyphyoez.cyou` URL only, with no website storage or API endpoint.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->
