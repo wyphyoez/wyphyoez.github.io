@@ -26,6 +26,19 @@ describe('portfolio contact and now content', () => {
 		});
 	});
 
+	it('keeps only verified portfolio projects and exposes the KyarBo game board asset', () => {
+		const kyarBo = info.projects.find((project) => project.slug === 'kyarbo');
+
+		expect(kyarBo).toMatchObject({
+			title: 'KyarBo',
+			label: 'Myanmar checkers game',
+			thumbnail:
+				'https://files.manuscdn.com/user_upload_by_module/session_file/310519663886508705/pYnmdFZscjtINLtA.webp',
+			stack: ['React', 'TypeScript', 'Supabase']
+		});
+		expect(info.projects.some((project) => project.slug === 'astro-portfolio')).toBe(false);
+	});
+
 	it('formats a client-side mailto brief without a persistence endpoint', async () => {
 		const source = await readFile(contactPagePath, 'utf8');
 

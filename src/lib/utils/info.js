@@ -168,37 +168,36 @@ export const info = {
 			}
 		},
 		{
-			slug: 'astro-portfolio',
-			title: 'Astro Portfolio',
-			label: 'Personal site',
+			slug: 'kyarbo',
+			title: 'KyarBo',
+			label: 'Myanmar checkers game',
 			description:
-				'A lightweight personal site exploring content-led layouts, project storytelling, and a quieter reading experience.',
-			stack: ['Astro', 'MDX'],
+				'A modern digital Myanmar checkers experience with a tactile board, guided practice, player profiles, and online match flows.',
+			stack: ['React', 'TypeScript', 'Supabase'],
 			isFeatured: true,
-			thumbnail: hoobank,
-			githubUrl: 'https://github.com/uzzii-21/astro-portfolio',
-			liveUrl: 'https://astro-portfolio-uzair.vercel.app/',
-			role: 'Content-led frontend build',
-			year: '2024',
+			thumbnail:
+				'https://files.manuscdn.com/user_upload_by_module/session_file/310519663886508705/pYnmdFZscjtINLtA.webp',
+			role: 'Product design & full-stack development',
+			year: '2026',
 			caseStudy: {
 				overview:
-					'A lightweight personal site exploring how content, navigation, and visual restraint can work together.',
+					'A focused Myanmar checkers product direction that combines a familiar game board with clearer practice, match, and player journeys.',
 				challenge:
-					'Create a personal web presence that feels distinct without allowing decoration to compete with the work itself.',
+					'Make the game board feel tactile and readable while giving players clear routes into practice, online play, profiles, and game settings.',
 				approach: [
-					'Let typography establish the visual voice.',
-					'Keep navigation simple and easy to escape.',
-					'Use content structure to create the page rhythm.'
+					'Use an expressive burgundy-and-gold board to make the game state easy to scan.',
+					'Structure the experience around practice, live matches, player context, and clear next actions.',
+					'Keep feedback, move history, timers, and game controls visible without distracting from the board.'
 				],
 				implementation: [
-					'Astro for the site architecture',
-					'MDX for content-led pages',
-					'Responsive layout patterns for a focused reading experience'
+					'React and TypeScript for the interactive game interface and stateful flows',
+					'Supabase-backed player, match, and social-game capabilities',
+					'Progressive web app patterns for a focused mobile and desktop play experience'
 				],
 				outcome:
-					'A quieter portfolio direction that treats the interface as a frame for the work and writing.',
+					'A detailed, playable product foundation that brings Myanmar checkers into a modern digital setting without losing the board-first experience.',
 				nextStep:
-					'Grow the content system with deeper project narratives and a more connected writing archive.'
+					'Continue refining live-match transitions, player progression, and social play tools through real-game feedback.'
 			}
 		}
 	]

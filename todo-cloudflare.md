@@ -186,3 +186,14 @@
 - [x] Add Contact and Now page entries to the portfolio navigation and internal CTAs.
 - [x] Validate mobile/desktop layouts, client-side form behavior, build, and route status for both pages.
 - [x] Commit, deploy, and verify the Contact brief and Now pages on the live custom domain.
+
+## Footer Light Mode and KyarBo Portfolio Update
+
+- [x] Inspect and correct the Footer’s light-mode surface, contrast, links, and controls.
+- [x] Remove the unverified Astro Portfolio entry from the portfolio data and project routes.
+- [x] Inspect the referenced KyarBo project for verified copy, technology, public links, and the intended screenshot.
+- [x] Add KyarBo to the portfolio with its verified screenshot and accessible project actions.
+- [x] Validate light/dark Footer states, KyarBo layout/image, responsive behavior, tests, and production build.
+- [ ] Commit, deploy, and live-verify the Footer correction and KyarBo project on the custom domain.
+
+> KyarBo visual reference confirmed from the user-linked task: `kyarbo-visual-target.png` is a 2560×1440 game-board composition with the KyarBo name, burgundy-and-gold checkers board, player timers, move list, and surrender control. The uploaded hand-drawn `Picsart` image is not the portfolio screenshot source.

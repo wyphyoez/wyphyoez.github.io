@@ -24,8 +24,8 @@
 		</p>
 	</header>
 	<div class="mt-14 grid gap-7 min-lg:grid-cols-2 min-lg:gap-8">
-		{#each info.projects as project}
-			<ProjectCard projectDetail={project} />
+		{#each info.projects as project, index}
+			<ProjectCard projectDetail={project} {index} />
 		{/each}
 	</div>
 </section>
