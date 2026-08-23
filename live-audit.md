@@ -128,4 +128,8 @@ Responsive Footer/KyarBo validation: The 2560×1440 KyarBo board image loads at 
 
 KyarBo case-study local verification: `/projects/kyarbo` renders the full 2560×1440 board image, project role/year, Myanmar checkers narrative, and React/TypeScript/Supabase metadata. The rendered page contains no Astro Portfolio copy and no unverified external project action, while its back navigation leads safely to the Projects index.
 
+KyarBo production verification: Cloudflare Pages deployment `96896ab8` published commit `7a358d8` successfully. The live Projects page now identifies KyarBo as case study 03, loads the public board image, exposes the correct stack and internal case-study path, and contains no Astro Portfolio entry.
+
+Footer light-mode production verification: On `https://wyphyoez.cyou/projects`, an explicit light-mode check reports the corrected `rgba(250, 250, 250, 0.9)` Footer surface and `rgb(18, 19, 22)` primary text. The live visual review confirms a readable light editorial panel, dark primary button, clear navigation columns, available-status accent, and legible attribution.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->

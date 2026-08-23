@@ -194,6 +194,6 @@
 - [x] Inspect the referenced KyarBo project for verified copy, technology, public links, and the intended screenshot.
 - [x] Add KyarBo to the portfolio with its verified screenshot and accessible project actions.
 - [x] Validate light/dark Footer states, KyarBo layout/image, responsive behavior, tests, and production build.
-- [ ] Commit, deploy, and live-verify the Footer correction and KyarBo project on the custom domain.
+- [x] Commit, deploy, and live-verify the Footer correction and KyarBo project on the custom domain.
 
 > KyarBo visual reference confirmed from the user-linked task: `kyarbo-visual-target.png` is a 2560×1440 game-board composition with the KyarBo name, burgundy-and-gold checkers board, player timers, move list, and surrender control. The uploaded hand-drawn `Picsart` image is not the portfolio screenshot source.
