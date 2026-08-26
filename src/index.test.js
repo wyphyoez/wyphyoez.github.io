@@ -34,8 +34,15 @@ describe('portfolio contact and now content', () => {
 			label: 'Myanmar checkers game',
 			thumbnail:
 				'https://files.manuscdn.com/user_upload_by_module/session_file/310519663886508705/pYnmdFZscjtINLtA.webp',
-			stack: ['React', 'TypeScript', 'Supabase']
+			stack: ['React', 'Cloudflare Pages', 'Cloudflare Workers', 'Cloudflare D1']
 		});
+		expect(kyarBo.caseStudy.implementation).toEqual(
+			expect.arrayContaining([
+				expect.stringContaining('Cloudflare Pages'),
+				expect.stringContaining('Cloudflare Workers'),
+				expect.stringContaining('Cloudflare D1')
+			])
+		);
 		expect(info.projects.some((project) => project.slug === 'astro-portfolio')).toBe(false);
 	});
 

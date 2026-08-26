@@ -172,8 +172,8 @@ export const info = {
 			title: 'KyarBo: Myanmar Checkers',
 			label: 'Myanmar checkers game',
 			description:
-				'A modern digital Myanmar checkers experience with a tactile board, guided practice, player profiles, and online match flows.',
-			stack: ['React', 'TypeScript', 'Supabase'],
+				'A modern digital Myanmar checkers experience with a tactile board, guided practice, player profiles, and an edge-ready Cloudflare migration path.',
+			stack: ['React', 'Cloudflare Pages', 'Cloudflare Workers', 'Cloudflare D1'],
 			isFeatured: true,
 			thumbnail:
 				'https://files.manuscdn.com/user_upload_by_module/session_file/310519663886508705/pYnmdFZscjtINLtA.webp',
@@ -181,23 +181,25 @@ export const info = {
 			year: '2026',
 			caseStudy: {
 				overview:
-					'A focused Myanmar checkers product direction that combines a familiar game board with clearer practice, match, and player journeys.',
+					'A focused Myanmar checkers product direction that combines a familiar game board with clearer practice, match, and player journeys—plus an isolated Cloudflare migration proof of concept.',
 				challenge:
 					'Make the game board feel tactile and readable while giving players clear routes into practice, online play, profiles, and game settings.',
 				approach: [
 					'Use an expressive burgundy-and-gold board to make the game state easy to scan.',
 					'Structure the experience around practice, live matches, player context, and clear next actions.',
-					'Keep feedback, move history, timers, and game controls visible without distracting from the board.'
+					'Keep feedback, move history, timers, and game controls visible without distracting from the board.',
+					'Separate the Cloudflare migration work so it can evolve without affecting the existing production application.'
 				],
 				implementation: [
-					'React and TypeScript for the interactive game interface and stateful flows',
-					'Supabase-backed player, match, and social-game capabilities',
-					'Progressive web app patterns for a focused mobile and desktop play experience'
+					'Cloudflare Pages-ready React PWA shell for the game, lobby, and player-interface experience',
+					'Cloudflare Workers API proof of concept for health checks, game-service boundaries, and signed session handling',
+					'Cloudflare D1 schema draft and local migrations for the planned game-data layer',
+					'An auth-ready session boundary, prepared for a selected OAuth provider before staging activation'
 				],
 				outcome:
-					'A detailed, playable product foundation that brings Myanmar checkers into a modern digital setting without losing the board-first experience.',
+					'A detailed, playable product foundation with a Cloudflare Pages, Workers, and D1 migration path—kept isolated until staging resources and OAuth configuration are activated.',
 				nextStep:
-					'Continue refining live-match transitions, player progression, and social play tools through real-game feedback.'
+					'Create the isolated staging Pages, Worker, and D1 resources; complete OAuth setup; then rehearse the data migration before activating the Cloudflare path.'
 			}
 		}
 	]

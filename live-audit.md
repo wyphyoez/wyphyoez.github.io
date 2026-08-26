@@ -136,4 +136,8 @@ KyarBo title-update local verification: The Projects card now renders “KyarBo:
 
 KyarBo title-update production verification: Cloudflare Pages deployment `865618f2` successfully published commit `d5125e2`. The live Projects page now renders the exact title “KyarBo: Myanmar Checkers” as case study 03, retaining the board image, Myanmar checkers label, technology stack, and `/projects/kyarbo` case-study link.
 
+KyarBo Cloudflare-services local card verification: The Projects card now presents the verified migration-proof-of-concept stack—React, Cloudflare Pages, Cloudflare Workers, and Cloudflare D1. At desktop width, all four pill controls wrap cleanly below the KyarBo description without affecting the screenshot, selected badge, or case-study action.
+
+KyarBo Cloudflare-services local case-study verification: The case study renders Pages, Workers, and D1 in the stack and implementation section, explicitly labels the work as an isolated proof of concept, and describes the staging/OAuth activation steps rather than claiming the resources are already live. The rendered article contains no obsolete Supabase reference.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->

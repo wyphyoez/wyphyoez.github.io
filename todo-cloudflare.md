@@ -203,3 +203,10 @@
 - [x] Update the portfolio card, case-study heading, SEO metadata, and structured data title to “KyarBo: Myanmar Checkers”.
 - [x] Extend regression coverage for the updated project title and validate responsive rendering, production build, and unit tests.
 - [x] Commit, deploy, and live-verify the renamed KyarBo project on the custom domain.
+
+## KyarBo Cloudflare Services Correction
+
+- [x] Inspect the referenced KyarBo implementation to verify every Cloudflare service used before changing portfolio copy.
+- [x] Replace the incomplete KyarBo technology stack and case-study implementation details with verified Cloudflare services.
+- [x] Add regression coverage and validate the corrected KyarBo card/case study, production build, and responsive layout.
+- [ ] Commit, deploy, and live-verify the corrected KyarBo Cloudflare-services information on the custom domain.
