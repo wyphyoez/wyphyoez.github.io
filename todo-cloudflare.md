@@ -202,4 +202,4 @@
 
 - [x] Update the portfolio card, case-study heading, SEO metadata, and structured data title to “KyarBo: Myanmar Checkers”.
 - [x] Extend regression coverage for the updated project title and validate responsive rendering, production build, and unit tests.
-- [ ] Commit, deploy, and live-verify the renamed KyarBo project on the custom domain.
+- [x] Commit, deploy, and live-verify the renamed KyarBo project on the custom domain.

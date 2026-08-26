@@ -134,4 +134,6 @@ Footer light-mode production verification: On `https://wyphyoez.cyou/projects`, 
 
 KyarBo title-update local verification: The Projects card now renders “KyarBo: Myanmar Checkers” in full alongside its correct case-study number, screenshot, description, and stack. The longer name remains legible within the responsive card without obscuring the selected badge or the case-study action. Production build, lint, whitespace validation, and all four unit tests pass.
 
+KyarBo title-update production verification: Cloudflare Pages deployment `865618f2` successfully published commit `d5125e2`. The live Projects page now renders the exact title “KyarBo: Myanmar Checkers” as case study 03, retaining the board image, Myanmar checkers label, technology stack, and `/projects/kyarbo` case-study link.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->
