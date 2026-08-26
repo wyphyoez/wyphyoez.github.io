@@ -209,4 +209,4 @@
 - [x] Inspect the referenced KyarBo implementation to verify every Cloudflare service used before changing portfolio copy.
 - [x] Replace the incomplete KyarBo technology stack and case-study implementation details with verified Cloudflare services.
 - [x] Add regression coverage and validate the corrected KyarBo card/case study, production build, and responsive layout.
-- [ ] Commit, deploy, and live-verify the corrected KyarBo Cloudflare-services information on the custom domain.
+- [x] Commit, deploy, and live-verify the corrected KyarBo Cloudflare-services information on the custom domain.

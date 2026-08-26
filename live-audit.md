@@ -140,4 +140,6 @@ KyarBo Cloudflare-services local card verification: The Projects card now presen
 
 KyarBo Cloudflare-services local case-study verification: The case study renders Pages, Workers, and D1 in the stack and implementation section, explicitly labels the work as an isolated proof of concept, and describes the staging/OAuth activation steps rather than claiming the resources are already live. The rendered article contains no obsolete Supabase reference.
 
+KyarBo Cloudflare-services production verification: Cloudflare Pages deployment `683e0714` successfully published commit `df73727`. The live case study now lists Cloudflare Pages, Cloudflare Workers, and Cloudflare D1, retains the migration-proof-of-concept qualifier, and states the remaining isolated staging, OAuth, and D1-migration activation steps.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->
