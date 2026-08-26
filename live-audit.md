@@ -132,4 +132,6 @@ KyarBo production verification: Cloudflare Pages deployment `96896ab8` published
 
 Footer light-mode production verification: On `https://wyphyoez.cyou/projects`, an explicit light-mode check reports the corrected `rgba(250, 250, 250, 0.9)` Footer surface and `rgb(18, 19, 22)` primary text. The live visual review confirms a readable light editorial panel, dark primary button, clear navigation columns, available-status accent, and legible attribution.
 
+KyarBo title-update local verification: The Projects card now renders “KyarBo: Myanmar Checkers” in full alongside its correct case-study number, screenshot, description, and stack. The longer name remains legible within the responsive card without obscuring the selected badge or the case-study action. Production build, lint, whitespace validation, and all four unit tests pass.
+
 <!-- The public CDN URL is intentionally used because the Cloudflare Pages deployment did not serve the project-scoped /manus-storage path. -->

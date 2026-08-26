@@ -197,3 +197,9 @@
 - [x] Commit, deploy, and live-verify the Footer correction and KyarBo project on the custom domain.
 
 > KyarBo visual reference confirmed from the user-linked task: `kyarbo-visual-target.png` is a 2560×1440 game-board composition with the KyarBo name, burgundy-and-gold checkers board, player timers, move list, and surrender control. The uploaded hand-drawn `Picsart` image is not the portfolio screenshot source.
+
+## KyarBo Project Title Update
+
+- [x] Update the portfolio card, case-study heading, SEO metadata, and structured data title to “KyarBo: Myanmar Checkers”.
+- [x] Extend regression coverage for the updated project title and validate responsive rendering, production build, and unit tests.
+- [ ] Commit, deploy, and live-verify the renamed KyarBo project on the custom domain.

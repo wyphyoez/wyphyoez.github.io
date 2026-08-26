@@ -30,7 +30,7 @@ describe('portfolio contact and now content', () => {
 		const kyarBo = info.projects.find((project) => project.slug === 'kyarbo');
 
 		expect(kyarBo).toMatchObject({
-			title: 'KyarBo',
+			title: 'KyarBo: Myanmar Checkers',
 			label: 'Myanmar checkers game',
 			thumbnail:
 				'https://files.manuscdn.com/user_upload_by_module/session_file/310519663886508705/pYnmdFZscjtINLtA.webp',

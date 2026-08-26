@@ -169,7 +169,7 @@ export const info = {
 		},
 		{
 			slug: 'kyarbo',
-			title: 'KyarBo',
+			title: 'KyarBo: Myanmar Checkers',
 			label: 'Myanmar checkers game',
 			description:
 				'A modern digital Myanmar checkers experience with a tactile board, guided practice, player profiles, and online match flows.',
